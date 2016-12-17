@@ -1,0 +1,46 @@
+<library>
+    <textures>
+        <texture name="lightmaps_world_0_png">
+            <class>lightmap</class>
+            <file>lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_1_png">
+            <class>lightmap</class>
+            <file>lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_2_png">
+            <class>lightmap</class>
+            <file>lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_3_png">
+            <class>lightmap</class>
+            <file>lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_4_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+			<file>lightmaps/world_4_0.png</file>
+        </texture>
+        <texture name="lightmaps_world_5_png">
+            <class>lightmap</class>
+            <file>lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_6_png">
+            <class>lightmap</class>
+            <file>lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_7_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+			<file>lightmaps/world_7_0.png</file>
+        </texture>
+    </textures>
+</library>

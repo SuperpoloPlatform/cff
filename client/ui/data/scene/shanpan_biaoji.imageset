@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Imageset xmlns:mx="http://www.adobe.com/2006/mxml" Name="shanpan" Imagefile="/ui/data/shanpan_biaoji.png">
+	<Image Name="traffic" XPos="10" YPos="95" Width="29" Height="50"/>
+	<Image Name="living" XPos="73" YPos="196" Width="30" Height="50"/>
+	<Image Name="flat" XPos="72" YPos="97" Width="30" Height="50"/>
+	<Image Name="unit" XPos="73" YPos="4" Width="30" Height="50"/>
+	<Image Name="teach" XPos="10" YPos="192" Width="30" Height="50"/>
+	<Image Name="bulid" XPos="16" YPos="4" Width="30" Height="48"/>
+	<Image Name="my_position" XPos="10" YPos="276" Width="118" Height="60"/>
+	<Image Name="admin" XPos="130" YPos="4" Width="30" Height="49"/>
+	<Image Name="other" XPos="130" YPos="97" Width="30" Height="49"/>
+	<Image Name="MouseArrow"  XPos="200" YPos="276" Width="18" Height="20"/>
+</Imageset>

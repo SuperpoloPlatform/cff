@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name='null'>crystalspace.mesh.loader.null</plugin>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+		<plugin name="cal3d">crystalspace.mesh.loader.sprite.cal3d</plugin>
+		<plugin name="cal3dfact">crystalspace.mesh.loader.factory.sprite.cal3d</plugin>
+	</plugins>
+	<!-- 这里添加shader
+	<shaders>
+		<shader>
+			<file>/shader/character/character_bump2.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/character/character2.xml</file>
+		</shader>
+	</shaders>
+	-->
+	<textures>
+		<texture name="sheep">
+			<file>/art/models/monster/yang/textures/sheep_1.tga</file>
+		</texture>
+	</textures>
+	<!-- 羊的material -->
+	<materials>
+		<material name="yang_sheep_1.tga">
+			<texture>sheep</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+	</materials>
+	<library>factories/genYang.xml</library>
+</library>

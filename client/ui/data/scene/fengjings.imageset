@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Imageset xmlns:mXPos="http://www.adobe.com/2006/mxml" Name="fengjings" Imagefile="/ui/data/fengjings.jpg">
+	<Image Name="fengjing_1" XPos="2" YPos="4" Width="250" Height="200"/>
+	<Image Name="fengjing_2" XPos="2" YPos="208" Width="250" Height="200"/>
+	<Image Name="fengjing_3" XPos="262" YPos="4" Width="250" Height="200"/>
+	<Image Name="fengjing_4" XPos="262" YPos="208" Width="250" Height="200"/>
+	<Image Name="fengjing_5" XPos="519" YPos="4" Width="250" Height="200"/>
+	<Image Name="fengjing_6" XPos="519" YPos="208" Width="250" Height="200"/>
+	<Image Name="fengjing_7" XPos="2" YPos="413" Width="250" Height="200"/>
+	<Image Name="fengjing_8" XPos="262" YPos="413" Width="250" Height="200"/>
+	<Image Name="fengjing_9" XPos="519" YPos="413" Width="250" Height="200"/>
+	<Image Name="fengjing_10" XPos="2" YPos="618" Width="250" Height="200"/>
+	<Image Name="fengjing_11" XPos="258" YPos="618" Width="250" Height="200"/>
+	<Image Name="fengjing_12" XPos="516" YPos="619" Width="250" Height="200"/>
+	<Image Name="fengjing_13" XPos="2" YPos="822" Width="250" Height="200"/>
+	<Image Name="fengjing_14" XPos="257" YPos="822" Width="250" Height="200"/>
+	<Image Name="fengjing_15" XPos="512" YPos="822" Width="250" Height="200"/>
+	<Image Name="fengjing_16" XPos="772" YPos="822" Width="250" Height="200"/>
+</Imageset>

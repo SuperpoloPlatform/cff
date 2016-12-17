@@ -1,0 +1,87 @@
+<library>
+  <textures>
+		<texture name='spark.png'>
+			<file>art/models/player/textures/spark.png</file>
+		</texture>
+  </textures>
+  
+    <materials>
+		<material name='spark'>
+			<texture>spark.png</texture>
+		</material>
+	</materials>
+	
+	<meshfact name="emitFact">
+        <plugin>crystalspace.mesh.loader.factory.emit</plugin>
+        <params />
+    </meshfact>
+	
+        <meshobj name="attack.special4">
+            <priority>alpha</priority>
+            <plugin>crystalspace.mesh.loader.emit</plugin>
+            <ztest />
+            <move>
+                <v x="0" y="0" z="0" />
+            </move>
+            <params>
+                <factory>emitFact</factory>
+                <mixmode>
+                    <add />
+                </mixmode>
+                <number>500</number>
+                <material>spark</material>
+                <rectparticles w="0.12" h="0.12" />
+                <lighting>no</lighting>
+                <totaltime>5000</totaltime>
+                <startpos>
+                    <emitfixed x="0" y="0" z="0" />
+                </startpos>
+                <startspeed>
+                    <emitfixed x="0" y="0.5" z="0" />
+                </startspeed>
+                <startaccel>
+                    <emitfixed x="0" y="0" z="0" />
+                </startaccel>
+                <aging>
+                    <color red="1" green="1" blue="1" />
+                    <time>0</time>
+                    <alpha>0.3</alpha>
+                    <swirl>1</swirl>
+                    <rotspeed>0</rotspeed>
+                    <scale>0.1</scale>
+                </aging>
+                <aging>
+                    <color red="0" green="1" blue="1" />
+                    <time>1000</time>
+                    <alpha>0.3</alpha>
+                    <swirl>0</swirl>
+                    <rotspeed>1</rotspeed>
+                    <scale>0.4</scale>
+                </aging>
+                <aging>
+                    <color red="0.6" green="0" blue="1" />
+                    <time>2000</time>
+                    <alpha>0.3</alpha>
+                    <swirl>0</swirl>
+                    <rotspeed>20</rotspeed>
+                    <scale>1.5</scale>
+                </aging>
+                <aging>
+                    <color red="0.3" green="0" blue="0.5" />
+                    <time>3000</time>
+                    <alpha>0.3</alpha>
+                    <swirl>0</swirl>
+                    <rotspeed>1</rotspeed>
+                    <scale>1</scale>
+                </aging>
+                <aging>
+                    <color red="0.3" green="0" blue="0.5" />
+                    <time>5000</time>
+                    <alpha>1</alpha>
+                    <swirl>0</swirl>
+                    <rotspeed>0</rotspeed>
+                    <scale>1</scale>
+                </aging>
+            </params>
+        </meshobj>
+</library>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset xmlns:mx="http://www.adobe.com/2006/mxml" Name="xiaoyuanjieshao" Imagefile="/ui/data/xiaoyuanjieshao.png" >
+	<Image Name="chubanshe" XPos="35" YPos="3" Width="400" Height="100"/>
+	<Image Name="xiaoyoulu" XPos="35" YPos="110" Width="400" Height="100"/>
+	<Image Name="shekeguanli" XPos="35" YPos="216" Width="400" Height="100"/>
+	<Image Name="jishuzhongxin" XPos="35" YPos="323" Width="400" Height="100"/>
+	<Image Name="zhaozhongxiu" XPos="592" YPos="4" Width="136" Height="176"/>
+	<Image Name="chenjianxiang" XPos="735" YPos="192" Width="130" Height="157"/>
+	<Image Name="hufuyin" XPos="592" YPos="192" Width="136" Height="157"/>
+	<Image Name="linguijun" XPos="740" YPos="10" Width="138" Height="169"/>
+	<Image Name="liuya" XPos="447" YPos="192" Width="136" Height="163"/>
+	<Image Name="shijianjun" XPos="447" YPos="3" Width="136" Height="183"/>
+	<Image Name="zhangxinmin" XPos="848" YPos="505" Width="155" Height="171"/>
+	<Image Name="yangfenghua" XPos="869" YPos="184" Width="152" Height="171"/>
+	<Image Name="wuyezhongxin" XPos="448" YPos="361" Width="300" Height="220"/>
+	<Image Name="wangling" XPos="884" YPos="10" Width="136" Height="165"/>
+	<Image Name="baoxianxueyuan" XPos="752" YPos="362" Width="269" Height="117"/>
+	<Image Name="jingmaozhulou" XPos="5" YPos="760" Width="400" Height="102"/>
+	<Image Name="jingmaotubiao" XPos="425" YPos="592" Width="400" Height="46"/>
+	<Image Name="yanxiuxueyuan" XPos="5" YPos="874" Width="400" Height="141"/>
+	<Image Name="jingjimaoyi" XPos="425" YPos="781" Width="400" Height="122"/>
+	<Image Name="jinrongxueyuan" XPos="5" YPos="645" Width="400" Height="104"/>
+	<Image Name="lilunke" XPos="4" YPos="600" Width="400" Height="38"/>
+	<Image Name="tiyujiaoxuebu" XPos="35" YPos="512" Width="400" Height="69"/>
+	<Image Name="yanjiushengyuan" XPos="425" YPos="713" Width="400" Height="63"/>
+	<Image Name="yingyuxueyuan" XPos="425" YPos="917" Width="400" Height="104"/>
+	<Image Name="maoyizuzhi" XPos="35" YPos="437" Width="400" Height="68"/>
+	<Image Name="yuyanxueyuan" XPos="425" YPos="645" Width="400" Height="54"/>
+</Imageset>

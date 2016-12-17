@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Window Type="interface/FrameWindow" Name="UI/RoleWindow">
+			<Property Name="UnifiedMaxSize" Value="{{0.198,0},{0.4,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.198,0},{0.4,0}}"/>
+			<Property Name="TitlebarEnabled" Value="True"/>
+			<Property Name="Visible" Value="False"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,0},{0.2,0},{0.198,0},{0.6,0}}"/>
+			<Window Type="interface/DefaultWindow" Name="UI/RoleWindow/RoleTheme">
+				<Property Name="theme_image" Value="set:interface image:role_theme"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.18,0},{0.3,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.18,0},{0.3,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.067,0},{0.17,0},{0.247,0},{0.47,0}}"/>
+				<Window Type="interface/Combobox" Name="UI/RoleWindow/RoleTheme/LeftCombobox">
+					<Property Name="UnifiedMaxSize" Value="{{0.0625,0},{0.09,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.0625,0},{0.09,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.153,0},{0.53,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0625,0},{0.09,0}}"/>
+					<Property Name="theme_image" Value="set:interface image:select_area"/>
+					<AutoWindow NameSuffix="__auto_editbox__">
+						<Property Name="HorzLabelFormatting" Value="LeftAligned"/>
+						<Property Name="text" Value="  基础属性"/>
+					</AutoWindow>
+					<AutoWindow NameSuffix="__auto_button__">
+						<Property Name="NormalImage" Value="set:interface image:btn_turn_right_normal"/>
+						<Property Name="HoverImage" Value="set:interface image:btn_turn_right_hover"/>
+						<Property Name="PushedImage" Value="set:interface image:btn_turn_right_normal"/>
+					</AutoWindow>
+					<AutoWindow NameSuffix="__auto_droplist__">
+						<Property Name="bg_image" Value="set:interface image:wupin_more_info"/>		
+						<Property Name="ForceVertScrollbar" Value="False"/>
+						<Property Name="ForceHorzScrollbar" Value="False"/>
+					</AutoWindow>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/RoleWindow/RoleTheme/LeftText">
+					<Property Name="UnifiedMaxSize" Value="{{0.055,0},{0.061,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.055,0},{0.061,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.171,0},{0.621,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.055,0},{0.061,0}}"/>
+					<Property Name="HorzLabelFormatting" Value="LeftAligned"/>
+					<Property Name="VertLabelFormatting" Value="CentreAligned"/>
+				</Window>	
+				<Window Type="interface/Combobox" Name="UI/RoleWindow/RoleTheme/RightCombobox">
+					<Property Name="UnifiedMaxSize" Value="{{0.0625,0},{0.09,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.0625,0},{0.09,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.5,0},{0.53,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0625,0},{0.09,0}}"/>
+					<Property Name="theme_image" Value="set:interface image:select_area"/>
+					<AutoWindow NameSuffix="__auto_editbox__">
+						<Property Name="HorzLabelFormatting" Value="LeftAligned"/>
+						<Property Name="text" Value="  近战"/>
+					</AutoWindow>
+					<AutoWindow NameSuffix="__auto_button__">
+						<Property Name="NormalImage" Value="set:interface image:btn_turn_right_normal"/>
+						<Property Name="HoverImage" Value="set:interface image:btn_turn_right_hover"/>
+						<Property Name="PushedImage" Value="set:interface image:btn_turn_right_normal"/>
+					</AutoWindow>
+					<AutoWindow NameSuffix="__auto_droplist__">
+						<Property Name="bg_image" Value="set:interface image:wupin_more_info"/>		
+						<Property Name="ForceVertScrollbar" Value="False"/>
+						<Property Name="ForceHorzScrollbar" Value="False"/>
+					</AutoWindow>
+				</Window>
+				<Window Type="interface/MultiLineEditbox" Name="UI/RoleWindow/RoleTheme/RightText">
+					<Property Name="UnifiedMaxSize" Value="{{0.055,0},{0.061,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.055,0},{0.061,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.52,0},{0.621,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.055,0},{0.061,0}}"/>
+					<Property Name="ReadOnly" Value="True"/>
+				</Window>	
+			</Window>
+		</Window>
+		<Window Type="interface/FrameWindow" Name="UI/PlayerBag">
+			<Property Name="Text" Value="我的背包"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.198,0},{0.4,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.198,0},{0.4,0}}"/>
+			<Property Name="TitlebarEnabled" Value="True"/>
+			<Property Name="Visible" Value="False"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.2,0},{0.598,0},{0.6,0}}"/>
+			<Window Type="interface/DefaultWindow" Name="UI/PlayerBag/BagContainer">
+				<Property Name="UnifiedMaxSize" Value="{{0.18,0},{0.3,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.18,0},{0.3,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.067,0},{0.17,0},{0.247,0},{0.47,0}}"/>
+				<Property Name="theme_image" Value="set:interface image:bag_bg"/>
+			</Window>
+			<Window Type="interface/DefaultWindow" Name="UI/PlayerBag/Money">
+				<Property Name="UnifiedMaxSize" Value="{{0.099,0},{0.028,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.099,0},{0.028,0}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.5,0},{0.93,0}}"/>
+				<Property Name="UnifiedSize" Value="{{0.099,0},{0.028,0}}"/>
+				<Window Type="interface/StaticText" Name="UI/PlayerBag/Money/GoldText">
+					<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.028,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.028,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.033,0},{0.028,0}}"/>
+					<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+					<Property Name="VertLabelFormatting" Value="CentreAligned"/>
+					<Property Name="text_theme">0
+					</Property>
+				</Window>
+				<Window Type="interface/StaticImage" Name="UI/PlayerBag/Money/Gold">
+					<Property Name="UnifiedMaxSize" Value="{{0.01,0},{0.015,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.01,0},{0.015,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.367,0},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.01,0},{0.015,0}}"/>
+					<Property Name="Image" Value="set:interface image:gold"/>
+					<Property Name="MousePassThroughEnabled" Value="True"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="False"/>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/PlayerBag/Money/SilverText">
+					<Property Name="UnifiedMaxSize" Value="{{0.012,0},{0.028,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.012,0},{0.028,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.467,0},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.012,0},{0.028,0}}"/>
+					<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+					<Property Name="VertLabelFormatting" Value="CentreAligned"/>
+					<Property Name="text_theme">0
+					</Property>
+				</Window>
+				<Window Type="interface/StaticImage" Name="UI/PlayerBag/Money/Silver">
+					<Property Name="UnifiedMaxSize" Value="{{0.01,0},{0.015,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.01,0},{0.015,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.617,0},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.01,0},{0.015,0}}"/>
+					<Property Name="Image" Value="set:interface image:silver"/>
+					<Property Name="MousePassThroughEnabled" Value="True"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="False"/>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/PlayerBag/Money/CopperText">
+					<Property Name="UnifiedMaxSize" Value="{{0.012,0},{0.028,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.012,0},{0.028,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.717,0},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.012,0},{0.028,0}}"/>
+					<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+					<Property Name="VertLabelFormatting" Value="CentreAligned"/>
+					<Property Name="text_theme">0
+					</Property>
+				</Window>
+				<Window Type="interface/StaticImage" Name="UI/PlayerBag/Money/Copper">
+					<Property Name="UnifiedMaxSize" Value="{{0.01,0},{0.015,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.01,0},{0.015,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.867,0},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.01,0},{0.015,0}}"/>
+					<Property Name="Image" Value="set:interface image:copper"/>
+					<Property Name="MousePassThroughEnabled" Value="True"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="False"/>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="interface/FrameWindow" Name="UI/NpcBag">
+			<Property Name="Text" Value="NPC"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.198,0},{0.4,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.198,0},{0.4,0}}"/>
+			<Property Name="TitlebarEnabled" Value="True"/>
+			<Property Name="Visible" Value="False"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,0},{0.2,0},{0.198,0},{0.4,0}}"/>
+			<Window Type="interface/DefaultWindow" Name="UI/NpcBag/BagContainer">
+				<Property Name="UnifiedMaxSize" Value="{{0.18,0},{0.3,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.18,0},{0.3,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.067,0},{0.17,0},{0.247,0},{0.47,0}}"/>
+				<Property Name="theme_image" Value="set:interface image:wupin_content"/>
+				<Window Type="interface/Button" Name="UI/NpcBag/BagContainer/Button1">
+					<Property Name="ButtonBg" Value="set:interface image:wupin_image"/>
+					<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+					<Property Name="ButtonWidth" Value="52"/>
+					<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+					<Property Name="BgImageWidth" Value="50"/>
+					<Property Name="ButtonHeight" Value="52"/>
+					<Property Name="BgImageHeight" Value="50"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0.037,0},{0.036,0},{0.058,0}}"/>
+					<Window Type="interface/DragContainer" Name="UI/NpcBag/BagContainer/Button1/GoodsContainer">
+						<Property Name="DragAlpha" Value="0.5"/>
+						<Property Name="DragThreshold" Value="8"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.133,0},{0.151,0}}"/>
+						<Window Type="interface/StaticImage" Name="UI/NpcBag/BagContainer/Button1/GoodsContainer/object">
+							<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="MousePassThroughEnabled" Value="True"/>
+							<Property Name="BackgroundEnabled" Value="True"/>
+							<Property Name="FrameEnabled" Value="False"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/NpcBag/BagContainer/SelectArea1">
+					<Property Name="UnifiedMaxSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.2,0},{0.037,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="bg_image" Value="set:interface image:wupin_simple_info"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="True"/>
+					<Property Name="text_theme">黑龙之牙项圈
+					
+					出售价格 
+					5金34银34铜
+					</Property>
+				</Window>
+				<Window Type="interface/Button" Name="UI/NpcBag/BagContainer/Button2">
+					<Property Name="ButtonBg" Value="set:interface image:wupin_image"/>
+					<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+					<Property Name="ButtonWidth" Value="52"/>
+					<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+					<Property Name="BgImageWidth" Value="50"/>
+					<Property Name="ButtonHeight" Value="52"/>
+					<Property Name="BgImageHeight" Value="50"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.51,0},{0.037,0},{0.236,0},{0.058,0}}"/>
+					<Window Type="interface/DragContainer" Name="UI/NpcBag/BagContainer/Button2/GoodsContainer">
+						<Property Name="DragAlpha" Value="0.5"/>
+						<Property Name="DragThreshold" Value="8"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.133,0},{0.151,0}}"/>
+						<Window Type="interface/StaticImage" Name="UI/NpcBag/BagContainer/Button2/GoodsContainer/object">
+							<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="MousePassThroughEnabled" Value="True"/>
+							<Property Name="BackgroundEnabled" Value="True"/>
+							<Property Name="FrameEnabled" Value="False"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/NpcBag/BagContainer/SelectArea2">
+					<Property Name="UnifiedMaxSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.71,0},{0.037,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="bg_image" Value="set:interface image:wupin_simple_info"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="True"/>
+					<Property Name="text_theme">剔骨者面甲
+					
+					出售价格 
+					15金4银34铜
+					</Property>
+				</Window>
+				<Window Type="interface/Button" Name="UI/NpcBag/BagContainer/Button3">
+					<Property Name="ButtonBg" Value="set:interface image:wupin_image"/>
+					<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+					<Property Name="ButtonWidth" Value="52"/>
+					<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+					<Property Name="BgImageWidth" Value="50"/>
+					<Property Name="ButtonHeight" Value="52"/>
+					<Property Name="BgImageHeight" Value="50"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0.23,0},{0.436,0},{0.058,0}}"/>
+					<Window Type="interface/DragContainer" Name="UI/NpcBag/BagContainer/Button3/GoodsContainer">
+						<Property Name="DragAlpha" Value="0.5"/>
+						<Property Name="DragThreshold" Value="8"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.133,0},{0.151,0}}"/>
+						<Window Type="interface/StaticImage" Name="UI/NpcBag/BagContainer/Button3/GoodsContainer/object">
+							<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="MousePassThroughEnabled" Value="True"/>
+							<Property Name="BackgroundEnabled" Value="True"/>
+							<Property Name="FrameEnabled" Value="False"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/NpcBag/BagContainer/SelectArea3">
+					<Property Name="UnifiedMaxSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.2,0},{0.23,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="bg_image" Value="set:interface image:wupin_simple_info"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="True"/>
+					<Property Name="text_theme">骑士之难甲胄
+					
+					出售价格 
+					2金50银
+					</Property>
+				</Window>
+				<Window Type="interface/Button" Name="UI/NpcBag/BagContainer/Button4">
+					<Property Name="ButtonBg" Value="set:interface image:wupin_image"/>
+					<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+					<Property Name="ButtonWidth" Value="52"/>
+					<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+					<Property Name="BgImageWidth" Value="50"/>
+					<Property Name="ButtonHeight" Value="52"/>
+					<Property Name="BgImageHeight" Value="50"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.51,0},{0.23,0},{0.036,0},{0.058,0}}"/>
+					<Window Type="interface/DragContainer" Name="UI/NpcBag/BagContainer/Button4/GoodsContainer">
+						<Property Name="DragAlpha" Value="0.5"/>
+						<Property Name="DragThreshold" Value="8"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.133,0},{0.151,0}}"/>
+						<Window Type="interface/StaticImage" Name="UI/NpcBag/BagContainer/Button4/GoodsContainer/object">
+							<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="MousePassThroughEnabled" Value="True"/>
+							<Property Name="BackgroundEnabled" Value="True"/>
+							<Property Name="FrameEnabled" Value="False"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/NpcBag/BagContainer/SelectArea4">
+					<Property Name="UnifiedMaxSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.71,0},{0.23,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="bg_image" Value="set:interface image:wupin_simple_info"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="True"/>
+					<Property Name="text_theme">染血的鳞片护
+					手
+					出售价格 
+					9金94银34铜
+					</Property>
+				</Window>
+				<Window Type="interface/Button" Name="UI/NpcBag/BagContainer/Button5">
+					<Property Name="ButtonBg" Value="set:interface image:wupin_image"/>
+					<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+					<Property Name="ButtonWidth" Value="52"/>
+					<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+					<Property Name="BgImageWidth" Value="50"/>
+					<Property Name="ButtonHeight" Value="52"/>
+					<Property Name="BgImageHeight" Value="50"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0.423,0},{0.036,0},{0.058,0}}"/>
+					<Window Type="interface/DragContainer" Name="UI/NpcBag/BagContainer/Button5/GoodsContainer">
+						<Property Name="DragAlpha" Value="0.5"/>
+						<Property Name="DragThreshold" Value="8"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.133,0},{0.151,0}}"/>
+						<Window Type="interface/StaticImage" Name="UI/NpcBag/BagContainer/Button5/GoodsContainer/object">
+							<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="MousePassThroughEnabled" Value="True"/>
+							<Property Name="BackgroundEnabled" Value="True"/>
+							<Property Name="FrameEnabled" Value="False"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/NpcBag/BagContainer/SelectArea5">
+					<Property Name="UnifiedMaxSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.2,0},{0.423,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="bg_image" Value="set:interface image:wupin_simple_info"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="True"/>
+					<Property Name="text_theme">无尽哀痛披风
+					
+					出售价格 
+					10金72银85铜
+					</Property>
+				</Window>
+				<Window Type="interface/Button" Name="UI/NpcBag/BagContainer/Button6">
+					<Property Name="ButtonBg" Value="set:interface image:wupin_image"/>
+					<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+					<Property Name="ButtonWidth" Value="52"/>
+					<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+					<Property Name="BgImageWidth" Value="50"/>
+					<Property Name="ButtonHeight" Value="52"/>
+					<Property Name="BgImageHeight" Value="50"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.51,0},{0.423,0},{0.036,0},{0.058,0}}"/>
+					<Window Type="interface/DragContainer" Name="UI/NpcBag/BagContainer/Button6/GoodsContainer">
+						<Property Name="DragAlpha" Value="0.5"/>
+						<Property Name="DragThreshold" Value="8"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.133,0},{0.151,0}}"/>
+						<Window Type="interface/StaticImage" Name="UI/NpcBag/BagContainer/Button6/GoodsContainer/object">
+							<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="MousePassThroughEnabled" Value="True"/>
+							<Property Name="BackgroundEnabled" Value="True"/>
+							<Property Name="FrameEnabled" Value="False"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/NpcBag/BagContainer/SelectArea6">
+					<Property Name="UnifiedMaxSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.71,0},{0.423,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="bg_image" Value="set:interface image:wupin_simple_info"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="True"/>
+				</Window>
+				<Window Type="interface/Button" Name="UI/NpcBag/BagContainer/Button7">
+					<Property Name="ButtonBg" Value="set:interface image:wupin_image"/>
+					<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+					<Property Name="ButtonWidth" Value="52"/>
+					<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+					<Property Name="BgImageWidth" Value="50"/>
+					<Property Name="ButtonHeight" Value="52"/>
+					<Property Name="BgImageHeight" Value="50"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0.616,0},{0.036,0},{0.058,0}}"/>
+					<Window Type="interface/DragContainer" Name="UI/NpcBag/BagContainer/Button7/GoodsContainer">
+						<Property Name="DragAlpha" Value="0.5"/>
+						<Property Name="DragThreshold" Value="8"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.133,0},{0.151,0}}"/>
+						<Window Type="interface/StaticImage" Name="UI/NpcBag/BagContainer/Button7/GoodsContainer/object">
+							<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="MousePassThroughEnabled" Value="True"/>
+							<Property Name="BackgroundEnabled" Value="True"/>
+							<Property Name="FrameEnabled" Value="False"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/NpcBag/BagContainer/SelectArea7">
+					<Property Name="UnifiedMaxSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.2,0},{0.616,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="bg_image" Value="set:interface image:wupin_simple_info"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="True"/>
+				</Window>
+				<Window Type="interface/Button" Name="UI/NpcBag/BagContainer/Button8">
+					<Property Name="ButtonBg" Value="set:interface image:wupin_image"/>
+					<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+					<Property Name="ButtonWidth" Value="52"/>
+					<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+					<Property Name="BgImageWidth" Value="50"/>
+					<Property Name="ButtonHeight" Value="52"/>
+					<Property Name="BgImageHeight" Value="50"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.036,0},{0.058,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.51,0},{0.616,0},{0.036,0},{0.058,0}}"/>
+					<Window Type="interface/DragContainer" Name="UI/NpcBag/BagContainer/Button8/GoodsContainer">
+						<Property Name="DragAlpha" Value="0.5"/>
+						<Property Name="DragThreshold" Value="8"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+						<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.133,0},{0.151,0}}"/>
+						<Window Type="interface/StaticImage" Name="UI/NpcBag/BagContainer/Button8/GoodsContainer/object">
+							<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+							<Property Name="UnifiedSize" Value="{{0.03,0},{0.048,0}}"/>
+							<Property Name="MousePassThroughEnabled" Value="True"/>
+							<Property Name="BackgroundEnabled" Value="True"/>
+							<Property Name="FrameEnabled" Value="False"/>
+						</Window>
+					</Window>
+				</Window>
+				<Window Type="interface/StaticText" Name="UI/NpcBag/BagContainer/SelectArea8">
+					<Property Name="UnifiedMaxSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.71,0},{0.616,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.052,0},{0.058,0}}"/>
+					<Property Name="bg_image" Value="set:interface image:wupin_simple_info"/>
+					<Property Name="BackgroundEnabled" Value="True"/>
+					<Property Name="FrameEnabled" Value="True"/>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="interface/DefaultWindow" Name="UI/ToolBar">
+			<Property Name="theme_image" Value="set:interface image:tool_all"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.416,0},{0.053,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.416,0},{0.053,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.45675,0},{0.94,0},{0.87275,0},{0.993,0}}"/>
+			<Window Type="interface/Button" Name="UI/ToolBar/RoleButton">
+				<Property Name="ButtonBg" Value="set:interface image:tool_btn_bg"/>
+				<Property Name="HoverImage" Value="set:interface image:tool_frame_hover"/>
+				<Property Name="ButtonImage" Value="set:interface image:role_button"/>
+				<Property Name="ButtonWidth" Value="27"/>
+				<Property Name="NormalImage" Value="set:interface image:tool_frame_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:tool_frame_down"/>
+				<Property Name="BgImageWidth" Value="23"/>
+				<Property Name="ButtonHeight" Value="37"/>
+				<Property Name="BgImageHeight" Value="31"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.104,0},{0.119,0},{0.145,0}}"/>
+				<Property Name="ButtonImageWidth" Value="23"/>
+				<Property Name="ButtonImageHeight" Value="26"/>
+				<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+				<Property Name="Tooltip">      
+				玩家信息
+				</Property>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/SkillsButton">
+				<Property Name="ButtonBg" Value="set:interface image:tool_btn_bg"/>
+				<Property Name="HoverImage" Value="set:interface image:tool_frame_hover"/>
+				<Property Name="ButtonImage" Value="set:interface image:skills_button"/>
+				<Property Name="ButtonWidth" Value="27"/>
+				<Property Name="NormalImage" Value="set:interface image:tool_frame_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:tool_frame_down"/>
+				<Property Name="BgImageWidth" Value="23"/>
+				<Property Name="ButtonHeight" Value="37"/>
+				<Property Name="BgImageHeight" Value="31"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.15,0},{0.104,0},{0.169,0},{0.145,0}}"/>
+				<Property Name="ButtonImageWidth" Value="22"/>
+				<Property Name="ButtonImageHeight" Value="29"/>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/TalentButton">
+				<Property Name="ButtonBg" Value="set:interface image:tool_btn_bg"/>
+				<Property Name="HoverImage" Value="set:interface image:tool_frame_hover"/>
+				<Property Name="ButtonImage" Value="set:interface image:talent_button"/>
+				<Property Name="ButtonWidth" Value="27"/>
+				<Property Name="NormalImage" Value="set:interface image:tool_frame_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:tool_frame_down"/>
+				<Property Name="BgImageWidth" Value="23"/>
+				<Property Name="ButtonHeight" Value="37"/>
+				<Property Name="BgImageHeight" Value="31"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.018,0},{0.041,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.018,0},{0.041,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.104,0},{0.218,0},{0.145,0}}"/>
+				<Property Name="ButtonImageWidth" Value="21"/>
+				<Property Name="ButtonImageHeight" Value="27"/>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/AchievementButton">
+				<Property Name="ButtonBg" Value="set:interface image:tool_btn_bg"/>
+				<Property Name="HoverImage" Value="set:interface image:tool_frame_hover"/>
+				<Property Name="ButtonImage" Value="set:interface image:achievement_button"/>
+				<Property Name="ButtonWidth" Value="27"/>
+				<Property Name="NormalImage" Value="set:interface image:tool_frame_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:tool_frame_down"/>
+				<Property Name="BgImageWidth" Value="23"/>
+				<Property Name="ButtonHeight" Value="37"/>
+				<Property Name="BgImageHeight" Value="31"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.25,0},{0.104,0},{0.269,0},{0.145,0}}"/>
+				<Property Name="ButtonImageWidth" Value="19"/>
+				<Property Name="ButtonImageHeight" Value="29"/>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/TaskButton">
+				<Property Name="ButtonBg" Value="set:interface image:tool_btn_bg"/>
+				<Property Name="HoverImage" Value="set:interface image:tool_frame_hover"/>
+				<Property Name="ButtonImage" Value="set:interface image:task_button"/>
+				<Property Name="ButtonWidth" Value="27"/>
+				<Property Name="NormalImage" Value="set:interface image:tool_frame_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:tool_frame_down"/>
+				<Property Name="BgImageWidth" Value="23"/>
+				<Property Name="ButtonHeight" Value="37"/>
+				<Property Name="BgImageHeight" Value="31"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.104,0},{0.319,0},{0.145,0}}"/>
+				<Property Name="ButtonImageWidth" Value="18"/>
+				<Property Name="ButtonImageHeight" Value="24"/>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/SocialButton">
+				<Property Name="ButtonBg" Value="set:interface image:tool_btn_bg"/>
+				<Property Name="HoverImage" Value="set:interface image:tool_frame_hover"/>
+				<Property Name="ButtonImage" Value="set:interface image:social_button"/>
+				<Property Name="ButtonWidth" Value="27"/>
+				<Property Name="NormalImage" Value="set:interface image:tool_frame_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:tool_frame_down"/>
+				<Property Name="BgImageWidth" Value="23"/>
+				<Property Name="ButtonHeight" Value="37"/>
+				<Property Name="BgImageHeight" Value="31"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.35,0},{0.104,0},{0.369,0},{0.145,0}}"/>
+				<Property Name="ButtonImageWidth" Value="23"/>
+				<Property Name="ButtonImageHeight" Value="26"/>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/BattleFieldButton">
+				<Property Name="ButtonBg" Value="set:interface image:tool_btn_bg"/>
+				<Property Name="HoverImage" Value="set:interface image:tool_frame_hover"/>
+				<Property Name="ButtonImage" Value="set:interface image:battle_field_button"/>
+				<Property Name="ButtonWidth" Value="27"/>
+				<Property Name="NormalImage" Value="set:interface image:tool_frame_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:tool_frame_down"/>
+				<Property Name="BgImageWidth" Value="23"/>
+				<Property Name="ButtonHeight" Value="37"/>
+				<Property Name="BgImageHeight" Value="31"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.104,0},{0.419,0},{0.145,0}}"/>
+				<Property Name="ButtonImageWidth" Value="20"/>
+				<Property Name="ButtonImageHeight" Value="20"/>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/RandomTeamButton">
+				<Property Name="ButtonBg" Value="set:interface image:tool_btn_bg"/>
+				<Property Name="HoverImage" Value="set:interface image:tool_frame_hover"/>
+				<Property Name="ButtonImage" Value="set:interface image:random_team_button"/>
+				<Property Name="ButtonWidth" Value="27"/>
+				<Property Name="NormalImage" Value="set:interface image:tool_frame_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:tool_frame_down"/>
+				<Property Name="BgImageWidth" Value="23"/>
+				<Property Name="ButtonHeight" Value="37"/>
+				<Property Name="BgImageHeight" Value="31"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.45,0},{0.104,0},{0.469,0},{0.145,0}}"/>
+				<Property Name="ButtonImageWidth" Value="22"/>
+				<Property Name="ButtonImageHeight" Value="18"/>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/SystemButton">
+				<Property Name="ButtonBg" Value="set:interface image:tool_btn_bg"/>
+				<Property Name="HoverImage" Value="set:interface image:tool_frame_hover"/>
+				<Property Name="ButtonImage" Value="set:interface image:system_button"/>
+				<Property Name="ButtonWidth" Value="27"/>
+				<Property Name="NormalImage" Value="set:interface image:tool_frame_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:tool_frame_down"/>
+				<Property Name="BgImageWidth" Value="23"/>
+				<Property Name="ButtonHeight" Value="37"/>
+				<Property Name="BgImageHeight" Value="31"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.5,0},{0.104,0},{0.519,0},{0.145,0}}"/>
+				<Property Name="ButtonImageWidth" Value="24"/>
+				<Property Name="ButtonImageHeight" Value="19"/>
+				<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+				<Property Name="Tooltip">      
+				游戏设置
+				</Property>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/HelpButton">
+				<Property Name="ButtonBg" Value="set:interface image:tool_btn_bg"/>
+				<Property Name="HoverImage" Value="set:interface image:tool_frame_hover"/>
+				<Property Name="ButtonImage" Value="set:interface image:help_button"/>
+				<Property Name="ButtonWidth" Value="27"/>
+				<Property Name="NormalImage" Value="set:interface image:tool_frame_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:tool_frame_down"/>
+				<Property Name="BgImageWidth" Value="23"/>
+				<Property Name="ButtonHeight" Value="37"/>
+				<Property Name="BgImageHeight" Value="31"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.041,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.104,0},{0.569,0},{0.145,0}}"/>
+				<Property Name="ButtonImageWidth" Value="18"/>
+				<Property Name="ButtonImageHeight" Value="25"/>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/Bag_1">
+				<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.024,0},{0.037,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.024,0},{0.037,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.657,0},{0.146,0},{0.681,0},{0.183,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ToolBar/Bag_1/DragContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="theme_image" Value="set:interface image:ico_bag"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.018,0},{0.03,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.018,0},{0.03,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.121,0},{0.133,0}}"/>
+					<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+					<Property Name="Tooltip">      
+					背包 1
+					</Property>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/Bag_2">
+				<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.024,0},{0.037,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.024,0},{0.037,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.722,0},{0.146,0},{0.746,0},{0.183,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ToolBar/Bag_2/DragContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="theme_image" Value="set:interface image:ico_bag"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.018,0},{0.03,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.018,0},{0.03,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.121,0},{0.133,0}}"/>
+					<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+					<Property Name="Tooltip">      
+					背包 2
+					</Property>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/Bag_3">
+				<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.024,0},{0.037,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.024,0},{0.037,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.787,0},{0.146,0},{0.811,0},{0.183,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ToolBar/Bag_3/DragContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="theme_image" Value="set:interface image:ico_bag"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.018,0},{0.03,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.018,0},{0.03,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.121,0},{0.133,0}}"/>
+					<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+					<Property Name="Tooltip">      
+					背包 3
+					</Property>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/Bag_4">
+				<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.024,0},{0.037,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.024,0},{0.037,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.852,0},{0.146,0},{0.876,0},{0.183,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ToolBar/Bag_4/DragContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="theme_image" Value="set:interface image:ico_bag"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.018,0},{0.03,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.018,0},{0.03,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.121,0},{0.133,0}}"/>
+					<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+					<Property Name="Tooltip">      
+					背包 4
+					</Property>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ToolBar/Bag_5">
+				<Property Name="HoverImage" Value="set:interface image:wupin_image_frame_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:wupin_image_frame_normal"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.03,0},{0.049,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.03,0},{0.049,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.918,0},{0,0},{0.948,0},{0.049,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ToolBar/Bag_5/DragContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="theme_image" Value="set:interface image:ico_bag"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.023,0},{0.036,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.023,0},{0.036,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.13,0},{0.13,0},{0.153,0},{0.166,0}}"/>
+					<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+					<Property Name="Tooltip">      
+					背包 5
+					</Property>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="interface/DefaultWindow" Name="UI/RoleStatusBar">
+			<Property Name="theme_image" Value="set:interface image:RoleStatusBar"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.161,0},{0.093,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.161,0},{0.093,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.161,0},{0.093,0}}"/>
+			<Window Type="interface/StaticImage" Name="UI/RoleStatusBar/HeadPortrait">
+				<Property Name="bg_image" Value="set:interface image:BlackHeadBg"/>
+				<Property Name="image_frame" Value="set:interface image:HeadFrame"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.053,0},{0.084,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.053,0},{0.084,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.03,0},{0,0},{0.083,0},{0.084,0}}"/>
+				<Property Name="FrameEnabled" Value="True"/>
+				<Property Name="BackgroundEnabled" Value="True"/>
+				<Window Type="interface/DefaultWindow" Name="UI/RoleStatusBar/HeadPortrait/Level">
+					<Property Name="theme_image" Value="set:interface image:Level"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.03,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.03,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.03,0},{0.65,0},{0.049,0},{0.601,0}}"/>
+				</Window>
+			</Window>
+			<Window Type="interface/DefaultWindow" Name="UI/RoleStatusBar/RoleName">
+				<Property Name="UnifiedMaxSize" Value="{{0.095,0},{0.022,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.095,0},{0.022,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.366,0},{0.155,0},{0.461,0},{0.177,0}}"/>
+			</Window>
+			<Window Type="interface/ProgressBar" Name="UI/RoleStatusBar/HP">
+				<Property Name="theme_image" Value="set:interface image:HP"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.096,0},{0.011,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.096,0},{0.011,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.366,0},{0.429,0},{0.462,0},{0.44,0}}"/>
+			</Window>
+			<Window Type="interface/ProgressBar" Name="UI/RoleStatusBar/MP">
+				<Property Name="theme_image" Value="set:interface image:MP"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.096,0},{0.011,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.096,0},{0.011,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.366,0},{0.583,0},{0.462,0},{0.594,0}}"/>
+			</Window>
+		</Window>
+		<Window Type="interface/DefaultWindow" Name="UI/TargetStatusBar">
+			<Property Name="theme_image" Value="set:interface image:RoleStatusBar"/>
+			<Property Name="Visible" Value="False"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.161,0},{0.093,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.161,0},{0.093,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.3,0},{0,0},{0.461,0},{0.093,0}}"/>
+			<Window Type="interface/StaticImage" Name="UI/TargetStatusBar/HeadPortrait">
+				<Property Name="bg_image" Value="set:interface image:BlackHeadBg"/>
+				<Property Name="image_frame" Value="set:interface image:HeadFrame"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.053,0},{0.084,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.053,0},{0.084,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.03,0},{0,0},{0.083,0},{0.084,0}}"/>
+				<Property Name="FrameEnabled" Value="True"/>
+				<Property Name="BackgroundEnabled" Value="True"/>
+				<Window Type="interface/DefaultWindow" Name="UI/TargetStatusBar/HeadPortrait/Level">
+					<Property Name="theme_image" Value="set:interface image:Level"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.019,0},{0.03,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.019,0},{0.03,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.03,0},{0.65,0},{0.049,0},{0.601,0}}"/>
+				</Window>
+			</Window>
+			<Window Type="interface/DefaultWindow" Name="UI/TargetStatusBar/TargetName">
+				<Property Name="UnifiedMaxSize" Value="{{0.095,0},{0.022,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.095,0},{0.022,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.366,0},{0.155,0},{0.461,0},{0.177,0}}"/>
+			</Window>
+			<Window Type="interface/ProgressBar" Name="UI/TargetStatusBar/HP">
+				<Property Name="theme_image" Value="set:interface image:HP"/>
+				<Property Name="CurrentProgress" Value="1.0"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.096,0},{0.011,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.096,0},{0.011,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.366,0},{0.429,0},{0.462,0},{0.44,0}}"/>
+			</Window>
+			<Window Type="interface/ProgressBar" Name="UI/TargetStatusBar/MP">
+				<Property Name="theme_image" Value="set:interface image:MP"/>
+				<Property Name="CurrentProgress" Value="1.0"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.096,0},{0.011,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.096,0},{0.011,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.366,0},{0.583,0},{0.462,0},{0.594,0}}"/>
+			</Window>
+		</Window>
+		<Window Type="interface/DefaultWindow" Name="UI/ShortcutBar">
+			<Property Name="UnifiedMaxSize" Value="{{0.333,0},{0.053,0}}"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.333,0},{0.053,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.127,0},{0.94,0},{0.45675,0},{0.993,0}}"/>
+			<Window Type="interface/Button" Name="UI/ShortcutBar/Button1">
+				<Property Name="ButtonBg" Value="set:interface image:jineng_frame"/>
+				<Property Name="HoverImage" Value="set:interface image:jineng_bg_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:jineng_bg_normall"/>
+				<Property Name="text_theme" Value="1"/>
+				<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+				<Property Name="VertLabelFormatting" Value="TopAligned"/>
+				<Property Name="ButtonWidth" Value="48"/>
+				<Property Name="BgImageWidth" Value="46"/>
+				<Property Name="ButtonHeight" Value="48"/>
+				<Property Name="BgImageHeight" Value="46"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.033,0},{0.053,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ShortcutBar/Button1/ShortCutContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.026,0},{0.0416,0}}"/>
+					<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+					<Property Name="Tooltip">      
+					攻击特效 1
+					</Property>
+					<Window Type="interface/StaticImage" Name="UI/ShortcutBar/Button1/ShortCutContainer/object">
+						<Property Name="Image" Value="set:ico image:chuizi001"/>
+						<Property Name="Alpha" Value="0.5"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="MousePassThroughEnabled" Value="True"/>
+						<Property Name="BackgroundEnabled" Value="True"/>
+						<Property Name="FrameEnabled" Value="False"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ShortcutBar/Button2">
+				<Property Name="ButtonBg" Value="set:interface image:jineng_frame"/>
+				<Property Name="HoverImage" Value="set:interface image:jineng_bg_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:jineng_bg_normall"/>
+				<Property Name="text_theme">  2
+				</Property>
+				<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+				<Property Name="VertLabelFormatting" Value="TopAligned"/>
+				<Property Name="ButtonWidth" Value="48"/>
+				<Property Name="BgImageWidth" Value="46"/>
+				<Property Name="ButtonHeight" Value="48"/>
+				<Property Name="BgImageHeight" Value="46"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.1,0},{0,0},{0.033,0},{0.053,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ShortcutBar/Button2/ShortCutContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.026,0},{0.0416,0}}"/>
+					<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+					<Property Name="Tooltip">      
+					攻击特效 2
+					</Property>
+					<Window Type="interface/StaticImage" Name="UI/ShortcutBar/Button2/ShortCutContainer/object">
+						<Property Name="Image" Value="set:ico image:shoutao001"/>
+						<Property Name="Alpha" Value="0.5"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="MousePassThroughEnabled" Value="True"/>
+						<Property Name="BackgroundEnabled" Value="True"/>
+						<Property Name="FrameEnabled" Value="False"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ShortcutBar/Button3">
+				<Property Name="ButtonBg" Value="set:interface image:jineng_frame"/>
+				<Property Name="HoverImage" Value="set:interface image:jineng_bg_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:jineng_bg_normall"/>
+				<Property Name="text_theme">  3
+				</Property>
+				<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+				<Property Name="VertLabelFormatting" Value="TopAligned"/>
+				<Property Name="ButtonWidth" Value="48"/>
+				<Property Name="BgImageWidth" Value="46"/>
+				<Property Name="ButtonHeight" Value="48"/>
+				<Property Name="BgImageHeight" Value="46"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.2,0},{0,0},{0.033,0},{0.053,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ShortcutBar/Button3/ShortCutContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.026,0},{0.0416,0}}"/>
+					<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+					<Property Name="Tooltip">      
+					攻击特效 3
+					</Property>
+					<Window Type="interface/StaticImage" Name="UI/ShortcutBar/Button3/ShortCutContainer/object">
+						<Property Name="Image" Value="set:ico image:fuzi003"/>
+						<Property Name="Alpha" Value="0.5"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="MousePassThroughEnabled" Value="True"/>
+						<Property Name="BackgroundEnabled" Value="True"/>
+						<Property Name="FrameEnabled" Value="False"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ShortcutBar/Button4">
+				<Property Name="ButtonBg" Value="set:interface image:jineng_frame"/>
+				<Property Name="HoverImage" Value="set:interface image:jineng_bg_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:jineng_bg_normall"/>
+				<Property Name="text_theme">  4
+				</Property>
+				<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+				<Property Name="VertLabelFormatting" Value="TopAligned"/>
+				<Property Name="ButtonWidth" Value="48"/>
+				<Property Name="BgImageWidth" Value="46"/>
+				<Property Name="ButtonHeight" Value="48"/>
+				<Property Name="BgImageHeight" Value="46"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.3,0},{0,0},{0.033,0},{0.053,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ShortcutBar/Button4/ShortCutContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.026,0},{0.0416,0}}"/>
+					<Property Name="CustomTooltipType" Value="interface/Tooltip"/>
+					<Property Name="Tooltip">      
+					攻击特效 4
+					</Property>
+					<Window Type="interface/StaticImage" Name="UI/ShortcutBar/Button4/ShortCutContainer/object">
+						<Property Name="Image" Value="set:ico image:fuzi004"/>
+						<Property Name="Alpha" Value="0.5"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="MousePassThroughEnabled" Value="True"/>
+						<Property Name="BackgroundEnabled" Value="True"/>
+						<Property Name="FrameEnabled" Value="False"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ShortcutBar/Button5">
+				<Property Name="ButtonBg" Value="set:interface image:jineng_frame"/>
+				<Property Name="HoverImage" Value="set:interface image:jineng_bg_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:jineng_bg_normall"/>
+				<Property Name="text_theme">  5
+				</Property>
+				<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+				<Property Name="VertLabelFormatting" Value="TopAligned"/>
+				<Property Name="ButtonWidth" Value="48"/>
+				<Property Name="BgImageWidth" Value="46"/>
+				<Property Name="ButtonHeight" Value="48"/>
+				<Property Name="BgImageHeight" Value="46"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.4,0},{0,0},{0.033,0},{0.053,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ShortcutBar/Button5/ShortCutContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.026,0},{0.0416,0}}"/>
+					<Window Type="interface/StaticImage" Name="UI/ShortcutBar/Button5/ShortCutContainer/object">
+						<Property Name="Alpha" Value="0.5"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="MousePassThroughEnabled" Value="True"/>
+						<Property Name="BackgroundEnabled" Value="True"/>
+						<Property Name="FrameEnabled" Value="False"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ShortcutBar/Button6">
+				<Property Name="ButtonBg" Value="set:interface image:jineng_frame"/>
+				<Property Name="HoverImage" Value="set:interface image:jineng_bg_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:jineng_bg_normall"/>
+				<Property Name="text_theme">  6
+				</Property>
+				<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+				<Property Name="VertLabelFormatting" Value="TopAligned"/>
+				<Property Name="ButtonWidth" Value="48"/>
+				<Property Name="BgImageWidth" Value="46"/>
+				<Property Name="ButtonHeight" Value="48"/>
+				<Property Name="BgImageHeight" Value="46"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.5,0},{0,0},{0.033,0},{0.053,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ShortcutBar/Button6/ShortCutContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.026,0},{0.0416,0}}"/>
+					<Window Type="interface/StaticImage" Name="UI/ShortcutBar/Button6/ShortCutContainer/object">
+						<Property Name="Alpha" Value="0.5"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="MousePassThroughEnabled" Value="True"/>
+						<Property Name="BackgroundEnabled" Value="True"/>
+						<Property Name="FrameEnabled" Value="False"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ShortcutBar/Button7">
+				<Property Name="ButtonBg" Value="set:interface image:jineng_frame"/>
+				<Property Name="HoverImage" Value="set:interface image:jineng_bg_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:jineng_bg_normall"/>
+				<Property Name="text_theme">  7
+				</Property>
+				<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+				<Property Name="VertLabelFormatting" Value="TopAligned"/>
+				<Property Name="ButtonWidth" Value="48"/>
+				<Property Name="BgImageWidth" Value="46"/>
+				<Property Name="ButtonHeight" Value="48"/>
+				<Property Name="BgImageHeight" Value="46"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0,0},{0.033,0},{0.053,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ShortcutBar/Button7/ShortCutContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.026,0},{0.0416,0}}"/>
+					<Window Type="interface/StaticImage" Name="UI/ShortcutBar/Button7/ShortCutContainer/object">
+						<Property Name="Alpha" Value="0.5"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="MousePassThroughEnabled" Value="True"/>
+						<Property Name="BackgroundEnabled" Value="True"/>
+						<Property Name="FrameEnabled" Value="False"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ShortcutBar/Button8">
+				<Property Name="ButtonBg" Value="set:interface image:jineng_frame"/>
+				<Property Name="HoverImage" Value="set:interface image:jineng_bg_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:jineng_bg_normall"/>
+				<Property Name="text_theme">  8
+				</Property>
+				<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+				<Property Name="VertLabelFormatting" Value="TopAligned"/>
+				<Property Name="ButtonWidth" Value="48"/>
+				<Property Name="BgImageWidth" Value="46"/>
+				<Property Name="ButtonHeight" Value="48"/>
+				<Property Name="BgImageHeight" Value="46"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.7,0},{0,0},{0.033,0},{0.053,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ShortcutBar/Button8/ShortCutContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.026,0},{0.0416,0}}"/>
+					<Window Type="interface/StaticImage" Name="UI/ShortcutBar/Button8/ShortCutContainer/object">
+						<Property Name="Alpha" Value="0.5"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="MousePassThroughEnabled" Value="True"/>
+						<Property Name="BackgroundEnabled" Value="True"/>
+						<Property Name="FrameEnabled" Value="False"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ShortcutBar/Button9">
+				<Property Name="ButtonBg" Value="set:interface image:jineng_frame"/>
+				<Property Name="HoverImage" Value="set:interface image:jineng_bg_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:jineng_bg_normall"/>
+				<Property Name="text_theme">  9
+				</Property>
+				<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+				<Property Name="VertLabelFormatting" Value="TopAligned"/>
+				<Property Name="ButtonWidth" Value="48"/>
+				<Property Name="BgImageWidth" Value="46"/>
+				<Property Name="ButtonHeight" Value="48"/>
+				<Property Name="BgImageHeight" Value="46"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.8,0},{0,0},{0.033,0},{0.053,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ShortcutBar/Button9/ShortCutContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.026,0},{0.0416,0}}"/>
+					<Window Type="interface/StaticImage" Name="UI/ShortcutBar/Button9/ShortCutContainer/object">
+						<Property Name="Alpha" Value="0.5"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="MousePassThroughEnabled" Value="True"/>
+						<Property Name="BackgroundEnabled" Value="True"/>
+						<Property Name="FrameEnabled" Value="False"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="interface/Button" Name="UI/ShortcutBar/Button10">
+				<Property Name="ButtonBg" Value="set:interface image:jineng_frame"/>
+				<Property Name="HoverImage" Value="set:interface image:jineng_bg_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:jineng_bg_normall"/>
+				<Property Name="text_theme">  10
+				</Property>
+				<Property Name="HorzLabelFormatting" Value="RightAligned"/>
+				<Property Name="VertLabelFormatting" Value="TopAligned"/>
+				<Property Name="ButtonWidth" Value="48"/>
+				<Property Name="BgImageWidth" Value="46"/>
+				<Property Name="ButtonHeight" Value="48"/>
+				<Property Name="BgImageHeight" Value="46"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.033,0},{0.053,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.9,0},{0,0},{0.033,0},{0.053,0}}"/>
+				<Window Type="interface/DragContainer" Name="UI/ShortcutBar/Button10/ShortCutContainer">
+					<Property Name="DragAlpha" Value="0.5"/>
+					<Property Name="DragThreshold" Value="8"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.103,0},{0.103,0},{0.026,0},{0.0416,0}}"/>
+					<Window Type="interface/StaticImage" Name="UI/ShortcutBar/Button10/ShortCutContainer/object">
+						<Property Name="Alpha" Value="0.5"/>
+						<Property Name="UnifiedMaxSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedMinSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{0.026,0},{0.0416,0}}"/>
+						<Property Name="MousePassThroughEnabled" Value="True"/>
+						<Property Name="BackgroundEnabled" Value="True"/>
+						<Property Name="FrameEnabled" Value="False"/>
+					</Window>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="interface/ProgressBar" Name="UI/ExperienceBar">
+			<Property Name="theme_image" Value="set:interface image:experience_line"/>
+			<Property Name="CurrentProgress" Value="0"/>
+			<Property Name="progress_frame" Value="set:interface image:experience_frame"/>
+			<Property Name="horz_format_property" Value="Tiled"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.749,0},{0.016,0}}"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.749,0},{0.016,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.13,0},{0.925,0},{0.868,0},{0.94,0}}"/>
+		</Window>
+		<Window Type="interface/FrameWindow" Name="UI/DialogContext">
+			<Property Name="UnifiedMaxSize" Value="{{0.198,0},{0.4,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.198,0},{0.4,0}}"/>
+			<Property Name="TitlebarEnabled" Value="True"/>
+			<Property Name="Visible" Value="False"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,0},{0.2,0},{0.198,0},{0.6,0}}"/>
+			<Window Type="interface/StaticText" Name="UI/DialogContext/DialogTheme">
+				<Property Name="bg_image" Value="set:interface image:dialog_content"/>
+				<Property Name="BackgroundEnabled" Value="True"/>
+				<Property Name="FrameEnabled" Value="True"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.18,0},{0.3,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.18,0},{0.3,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.067,0},{0.17,0},{0.247,0},{0.47,0}}"/>
+				<Window Type="interface/Button" Name="UI/DialogContext/DialogTheme/Continue">
+					<Property Name="text_theme">  继续
+					</Property>
+					<Property Name="HoverImage" Value="set:interface image:huangkuang"/>
+					<Property Name="HorzLabelFormatting" Value="LeftAligned"/>
+					<Property Name="VertLabelFormatting" Value="CentreAligned"/>
+					<Property Name="ButtonWidth" Value="200"/>
+					<Property Name="ButtonHeight" Value="24"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.139,0},{0.027,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.139,0},{0.027,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.13,0},{0.723,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.139,0},{0.027,0}}"/>
+				</Window>
+				<Window Type="interface/Button" Name="UI/DialogContext/DialogTheme/Quit">
+					<Property Name="text_theme">  退出
+					</Property>
+					<Property Name="HoverImage" Value="set:interface image:huangkuang"/>
+					<Property Name="HorzLabelFormatting" Value="LeftAligned"/>
+					<Property Name="VertLabelFormatting" Value="CentreAligned"/>
+					<Property Name="ButtonWidth" Value="200"/>
+					<Property Name="ButtonHeight" Value="24"/>
+					<Property Name="UnifiedMaxSize" Value="{{0.139,0},{0.027,0}}"/>
+					<Property Name="UnifiedMinSize" Value="{{0.139,0},{0.027,0}}"/>
+					<Property Name="UnifiedPosition" Value="{{0.13,0},{0.826,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.139,0},{0.027,0}}"/>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="interface/DefaultWindow" Name="UI/ConfirmMenu">
+			<Property Name="theme_image" Value="set:interface image:wupin_more_info"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.099,0},{0.039,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.099,0},{0.039,0}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.45,0},{0.48,0}}"/>
+			<Property Name="UnifiedSize" Value="{{0.099,0},{0.039,0}}"/>
+			<Property Name="Visible" Value="False"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Window Type="interface/Button" Name="UI/ConfirmMenu/Ok">
+				<Property Name="text_theme">  确认交易
+				</Property>
+				<Property Name="HoverImage" Value="set:interface image:btn_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:btn_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:btn_down"/>
+				<Property Name="HorzLabelFormatting" Value="CentreAligned"/>
+				<Property Name="VertLabelFormatting" Value="CentreAligned"/>
+				<Property Name="ButtonWidth" Value="71"/>
+				<Property Name="ButtonHeight" Value="35"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.049,0},{0.039,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.049,0},{0.039,0}}"/>
+				<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+				<Property Name="UnifiedSize" Value="{{0.049,0},{0.039,0}}"/>
+				</Window>
+			<Window Type="interface/Button" Name="UI/ConfirmMenu/Quit">
+				<Property Name="text_theme">  取消交易
+				</Property>
+				<Property Name="HoverImage" Value="set:interface image:btn_hover"/>
+				<Property Name="NormalImage" Value="set:interface image:btn_normal"/>
+				<Property Name="PushedImage" Value="set:interface image:btn_down"/>
+				<Property Name="HorzLabelFormatting" Value="CentreAligned"/>
+				<Property Name="VertLabelFormatting" Value="CentreAligned"/>
+				<Property Name="ButtonWidth" Value="71"/>
+				<Property Name="ButtonHeight" Value="35"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.049,0},{0.039,0}}"/>
+				<Property Name="UnifiedMinSize" Value="{{0.049,0},{0.039,0}}"/>
+				<Property Name="UnifiedPosition" Value="{{0.5,0},{0,0}}"/>
+				<Property Name="UnifiedSize" Value="{{0.049,0},{0.039,0}}"/>
+			</Window>		
+		</Window>
+		<!--
+		<Window Type="interface/Checkbox" Name="UI/Checkbox">
+			<Property Name="UnifiedMaxSize" Value="{{0.024,0},{0.039,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.024,0},{0.039,0}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.7,0},{0.1,0}}"/>
+			<Property Name="UnifiedSize" Value="{{0.024,0},{0.039,0}}"/> 
+			<Property Name="normal_image" Value="set:interface image:Level"/>
+			<Property Name="hover_image" Value="set:interface image:Level"/>
+			<Property Name="pushed_image" Value="set:interface image:Level"/>
+			<Property Name="pushed_off_image" Value="set:interface image:Level"/>
+			<Property Name="selected_normal_image" Value="set:interface image:jin"/>
+			<Property Name="selected_hover_image" Value="set:interface image:jin"/>
+			<Property Name="selected_pushed_image" Value="set:interface image:jin"/>
+		<Window Type="interface/ComboDropList" Name="UI/ChatAreas">
+			<Property Name="UnifiedMaxSize" Value="{{0.139,0},{0.111,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.139,0},{0.111,0}}"/>
+			<Property Name="UnifiedPosition" Value="{{0,0},{0.8,0}}"/>
+			<Property Name="UnifiedSize" Value="{{0.139,0},{0.111,0}}"/> 
+			<Property Name="bg_image" Value="set:interface image:wupin_more_info"/>		
+			<Property Name="ComboWidth" Value="200"/>
+			<Property Name="ComboHeight" Value="100"/>
+			<Property Name="VscrollbarWidth" Value="28"/>
+			<Property Name="VscrollbarHeight" Value="100"/>
+			<Property Name="HscrollbarWidth" Value="0"/>
+			<Property Name="HscrollbarHeight" Value="0"/>
+			<Property Name="ForceVertScrollbar" Value="True"/>
+			<Property Name="ForceHorzScrollbar" Value="True"/>
+			<AutoWindow NameSuffix="__auto_vscrollbar__">
+				<Property Name="VscrollbarWidth" Value="28"/>
+				<Property Name="VscrollbarHeight" Value="100"/>
+				<Property Name="VscrollBackground" Value="set:interface image:scoll_bg"/>
+				<Property Name="ThumbHeight" Value="19"/>
+				<Property Name="IncbtnHeight" Value="23"/>
+				<Property Name="DecbtnHeight" Value="23"/>
+				<AutoWindow NameSuffix="__auto_thumb__">
+					<Property Name="NormalImage" Value="set:interface image:scoll_btn"/>
+					<Property Name="HoverImage" Value="set:interface image:scoll_btn"/>
+				</AutoWindow>
+				<AutoWindow NameSuffix="__auto_incbtn__">
+					<Property Name="NormalImage" Value="set:interface image:scoll_down"/>
+					<Property Name="HoverImage" Value="set:interface image:scoll_down"/>
+					<Property Name="PushedImage" Value="set:interface image:scoll_down"/>
+					<Property Name="ButtonImage" Value="set:interface image:scoll_down"/>
+					<Property Name="ButtonImageWidth" Value="28"/>
+					<Property Name="ButtonImageHeight" Value="23"/>
+					<Property Name="ButtonWidth" Value="28"/>
+					<Property Name="ButtonHeight" Value="23"/>
+				</AutoWindow>
+				<AutoWindow NameSuffix="__auto_decbtn__">
+					<Property Name="NormalImage" Value="set:interface image:scoll_up"/>
+					<Property Name="HoverImage" Value="set:interface image:scoll_up"/>
+					<Property Name="PushedImage" Value="set:interface image:scoll_up"/>
+					<Property Name="ButtonImage" Value="set:interface image:scoll_up"/>
+					<Property Name="ButtonImageWidth" Value="28"/>
+					<Property Name="ButtonImageHeight" Value="23"/>
+					<Property Name="ButtonWidth" Value="28"/>
+					<Property Name="ButtonHeight" Value="23"/>
+				</AutoWindow>
+			</AutoWindow>
+			<AutoWindow NameSuffix="__auto_hscrollbar__">
+				<Property Name="VscrollbarWidth" Value="180"/>
+				<Property Name="VscrollbarHeight" Value="28"/>
+				<Property Name="VscrollBackground" Value="set:interface image:scoll_bg"/>
+				<Property Name="ThumbHeight" Value="19"/>
+				<Property Name="IncbtnHeight" Value="23"/>
+				<Property Name="DecbtnHeight" Value="23"/>
+				<AutoWindow NameSuffix="__auto_thumb__">
+					<Property Name="NormalImage" Value="set:interface image:scoll_btn"/>
+					<Property Name="HoverImage" Value="set:interface image:scoll_btn"/>
+				</AutoWindow>
+				<AutoWindow NameSuffix="__auto_incbtn__">
+					<Property Name="NormalImage" Value="set:interface image:select_right"/>
+					<Property Name="HoverImage" Value="set:interface image:select_right"/>
+					<Property Name="PushedImage" Value="set:interface image:select_right"/>
+					<Property Name="ButtonImage" Value="set:interface image:select_right"/>
+					<Property Name="ButtonImageWidth" Value="39"/>
+					<Property Name="ButtonImageHeight" Value="41"/>
+					<Property Name="ButtonWidth" Value="28"/>
+					<Property Name="ButtonHeight" Value="23"/>
+				</AutoWindow>
+				<AutoWindow NameSuffix="__auto_decbtn__">
+					<Property Name="NormalImage" Value="set:interface image:select_left"/>
+					<Property Name="HoverImage" Value="set:interface image:select_left"/>
+					<Property Name="PushedImage" Value="set:interface image:select_left"/>
+					<Property Name="ButtonImage" Value="set:interface image:select_left"/>
+					<Property Name="ButtonImageWidth" Value="39"/>
+					<Property Name="ButtonImageHeight" Value="41"/>
+					<Property Name="ButtonWidth" Value="28"/>
+					<Property Name="ButtonHeight" Value="23"/>
+				</AutoWindow>
+			</AutoWindow>
+		</Window>
+		-->
+	</Window>
+</GUILayout>

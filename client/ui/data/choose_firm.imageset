@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="choose_firm" Imagefile="choose_firm.png">
+<Image Name="beijing" XPos="0" YPos="0" Width="961" Height="539" />
+<Image Name="xiongshi_hover" XPos="0" YPos="540" Width="230" Height="223" />
+<Image Name="xiongshi_normal" XPos="232" YPos="542" Width="228" Height="219" />
+<Image Name="huanyu_hover" XPos="251" YPos="766" Width="239" Height="231" />
+<Image Name="huanyu_normal" XPos="0" YPos="766" Width="250" Height="233" />
+<Image Name="ok_or_no" XPos="461" YPos="542" Width="389" Height="114" />
+<Image Name="join_btn" XPos="853" YPos="543" Width="107" Height="36" />
+</Imageset>

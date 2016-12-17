@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Imageset xmlns:mx="http://www.adobe.com/2006/mxml" Name="word" Imagefile="word.png" >
+	<Image Name="one_normal" XPos="134" YPos="45" Width="856" Height="47"/>
+	<Image Name="two_normal" XPos="132" YPos="167" Width="860" Height="44"/>
+	<Image Name="two_hover" XPos="132" YPos="227" Width="860" Height="44"/>
+	<Image Name="three_normal" XPos="134" YPos="387" Width="862" Height="46"/>
+	<Image Name="four_normal" XPos="132" YPos="278" Width="852" Height="47"/>
+	<Image Name="one_hover" XPos="133" YPos="101" Width="856" Height="47"/>
+	<Image Name="four_hover" XPos="134" YPos="332" Width="852" Height="47"/>
+	<Image Name="three_hover" XPos="135" YPos="450" Width="862" Height="46"/>
+	<Image Name="MouseArrow"  XPos="200" YPos="510" Width="18" Height="20"/>
+</Imageset>

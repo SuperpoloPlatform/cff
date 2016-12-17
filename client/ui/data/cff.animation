@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance" xsi:noNamespaceSchemaLocation="Animation.xsd">
+	<AnimationDefinition duration ="0.8" name ="root/image1" replayMode ="once">
+		<Affector property="UnifiedAreaRect" interpolator="URect">
+			<KeyFrame position="0.0" value="{{-0.03125,0},{-0.05555,0},{1.03125,0},{1.05555,0}}" progression="quadratic decelerating"/>
+			<KeyFrame position="0.8" value="{{0,0},{-0.05555,0},{1.06250,0},{1.05555,0}}" progression="quadratic decelerating"/>
+		</Affector> 
+	</AnimationDefinition>
+	<AnimationDefinition duration ="0.4" name ="root/image2" replayMode ="once">
+		<Affector property="UnifiedAreaRect" interpolator="URect">
+			<KeyFrame position="0.0" value="{{0,0},{-0.05555,0},{1.06250,0},{1.05555,0}}" progression="quadratic decelerating"/>
+			<KeyFrame position="0.4" value="{{-0.03125,0},{-0.05555,0},{1.03125,0},{1.05555,0}}" progression="quadratic decelerating"/>
+		</Affector> 
+	</AnimationDefinition>
+	<AnimationDefinition duration ="0.8" name ="root/image3" replayMode ="once">
+		<Affector property="UnifiedAreaRect" interpolator="URect">
+			<KeyFrame position="0.0" value="{{-0.03125,0},{-0.05555,0},{1.03125,0},{1.05555,0}}" progression="quadratic decelerating"/>
+			<KeyFrame position="0.8" value="{{-0.03125,0},{0,0},{1.03125,0},{1.11111,0}}" progression="quadratic decelerating"/>
+		</Affector> 
+	</AnimationDefinition>
+	<AnimationDefinition duration ="0.4" name ="root/image4" replayMode ="once">
+		<Affector property="UnifiedAreaRect" interpolator="URect">
+			<KeyFrame position="0.0" value="{{-0.03125,0},{0,0},{1.03125,0},{1.11111,0}}" progression="quadratic decelerating"/>
+			<KeyFrame position="0.4" value="{{-0.03125,0},{-0.05555,0},{1.03125,0},{1.05555,0}}" progression="quadratic decelerating"/>
+		</Affector> 
+	</AnimationDefinition>
+	<AnimationDefinition duration ="0.8" name ="root/image5" replayMode ="once">
+		<Affector property="UnifiedAreaRect" interpolator="URect">
+			<KeyFrame position="0.0" value="{{-0.03125,0},{-0.05555,0},{1.03125,0},{1.05555,0}}" progression="quadratic decelerating"/>
+			<KeyFrame position="0.8" value="{{-0.0625,0},{-0.05555,0},{1,0},{1.05555,0}}" progression="quadratic decelerating"/>
+		</Affector> 
+	</AnimationDefinition>
+	<AnimationDefinition duration ="0.4" name ="root/image6" replayMode ="once">
+		<Affector property="UnifiedAreaRect" interpolator="URect">
+			<KeyFrame position="0.0" value="{{-0.0625,0},{-0.05555,0},{1,0},{1.05555,0}}" progression="quadratic decelerating"/>
+			<KeyFrame position="0.4" value="{{-0.03125,0},{-0.05555,0},{1.03125,0},{1.05555,0}}" progression="quadratic decelerating"/>
+		</Affector> 
+	</AnimationDefinition>
+	<AnimationDefinition duration ="0.8" name ="root/image7" replayMode ="once">
+		<Affector property="UnifiedAreaRect" interpolator="URect">
+			<KeyFrame position="0.0" value="{{-0.03125,0},{-0.05555,0},{1.03125,0},{1.05555,0}}" progression="quadratic decelerating"/>
+			<KeyFrame position="0.8" value="{{-0.03125,0},{-0.11111,0},{1.03125,0},{1,0}}" progression="quadratic decelerating"/>
+		</Affector> 
+	</AnimationDefinition>
+	<AnimationDefinition duration ="0.4" name ="root/image8" replayMode ="once">
+		<Affector property="UnifiedAreaRect" interpolator="URect">
+			<KeyFrame position="0.0" value="{{-0.03125,0},{-0.11111,0},{1.03125,0},{1,0}}" progression="quadratic decelerating"/>
+			<KeyFrame position="0.4" value="{{-0.03125,0},{-0.05555,0},{1.03125,0},{1.05555,0}}" progression="quadratic decelerating"/>
+		</Affector> 
+	</AnimationDefinition>
+	
+	<AnimationDefinition duration ="1.0" name ="carat_alpha" replayMode ="loop">
+		<Affector property="image" interpolator="String">
+			<KeyFrame position="0.0" value="set:cff image:EditBoxCarat" />  
+			<KeyFrame position="0.5" progression="discrete" value="set:cff image:touming" />  
+			<KeyFrame position="1.0" progression="discrete" value="set:cff image:EditBoxCarat" /> 
+		</Affector>
+	</AnimationDefinition>
+</Animations>

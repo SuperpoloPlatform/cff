@@ -1,0 +1,7 @@
+<root total_tris="8" total_verts="16">
+  <meshfactory name="col" fromfile="D:\p\yunshikeng_m\src\art\scene\scene.x" meshindex="0" numfaces="8" numvertices="16">
+    <material name="m0">
+      <diffusetexture>/art/textures/col.png</diffusetexture>
+    </material>
+  </meshfactory>
+</root>

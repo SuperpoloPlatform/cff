@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name="particles">crystalspace.mesh.loader.particles</plugin>
+		<plugin name="particlesfact">crystalspace.mesh.loader.factory.particles</plugin>
+	</plugins>
+	<textures>
+		<texture name='smoke.png.001'>
+			<file>art/models/player/textures/smoke.png.001</file>
+		</texture>
+	</textures>
+
+	<materials>
+		<material name='Materialsmoke.png.001'>
+			<texture>smoke.png.001</texture>
+		</material>
+	</materials>
+
+	<meshfact name='upgrade.level5'>
+		<plugin>particlesfact</plugin>
+		<priority>alpha</priority>
+		<ztest/>
+		<params>
+			<material>Materialsmoke.png.001</material>
+			<renderorientation>camface approx</renderorientation>
+			<rotationmode>none</rotationmode>
+			<sortmode>none</sortmode>
+			<integrationmode>linear</integrationmode>
+			<particlesize y='1.0' x='1.0'/>
+			<transformmode>local</transformmode>
+			<!-- 在一个圆圈中随机产生粒子。 -->
+			<!-- 部分注释内容来自ticket:268#comment:16 -->
+			<emitter type='sphere'>
+				<enabled>yes</enabled><!-- 控制粒子的显示和隐藏 -->
+				<uniformvelocity>yes</uniformvelocity><!-- yes 时规定了所有的粒子相同的速度，相同的方向发射。 no时 貌似收到了 mass 的影响，当有速度使，会喷向周围（360度）-->
+				<emissionrate>20</emissionrate><!-- 每秒钟产生多少。 -->
+				<radius>1</radius><!-- 设置例子喷射的起点半径 -->
+				<position y='0' x='0' z='0'/><!-- 粒子发射器中心的位置 -->
+				<initialvelocity y='0' x='0' z='1'/><!-- 设置粒子在发射出去时的速度 -->
+				<mass max='1.0' min='1.0'/><!-- 喷射粒子的数量 受限于 emissionrate （粒子的数量） -->
+				<initialttl max='2.0' min='2.0'/><!-- 每一个粒子的生存时间 -->
+				<placement>volume</placement>
+			</emitter>
+			<effector type='force'>
+				<force y='1' x='0.5' z='0'/><!-- 是一种强制力，对于反方向运动的粒子有向回的牵制力 -->
+			</effector>
+			<effector type='lincolor'>
+				<color blue='0' green='0.35' red='1' time='1.0'/>
+				<color blue='0' green='0.32' red='1' time='0.8'/>
+				<color blue='0' green='0.22' red='1' time='0.7'/>
+				<color blue='0' green='0.12' red='0.8' time='0.5'/>
+				<color blue='0' green='0' red='0.6' time='0.4'/>
+				<color blue='0' green='0' red='0.4' time='0.3'/>
+				<color blue='0' green='0' red='0.2' time='0.2'/>
+				<color blue='0' green='0' red='0' time='0.1'/>
+				<color blue='0' green='0' red='0' time='0.0'/>
+			</effector>
+		</params>
+	</meshfact>
+
+	<meshobj name='upgrade.level5'>
+		<plugin>particles</plugin>
+		<priority>alpha</priority>
+		<params>
+		<factory>upgrade.level5</factory>
+		<material>Materialsmoke.png.001</material>
+		<mixmode>
+			<add/>
+		</mixmode>
+		</params>
+		<ztest/>
+		<move>
+		<v y='0' x='0' z='-5'/>
+		</move>
+		<key name='particles_outerradius' value='1.0'/>
+		<key name='particles_time' value='1000'/>
+		<key name='particles_direction' value='0.000000,1.000000,0.000000'/>
+		<key name='particles_colorheat' value='198.000061035'/>
+	</meshobj>
+</library>

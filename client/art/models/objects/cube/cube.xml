@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+	<plugins>
+		<plugin name='null'>crystalspace.mesh.loader.null</plugin>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	<textures>
+		<texture name='color_red'>
+			<color red="1" green="0" blue="0" />
+		</texture>
+	</textures>
+	<materials>
+		<material name="red">
+			<texture>color_red</texture>
+		</material>
+	</materials>
+	<library>/art/models/objects/cube/factories/genCube.xml</library>
+</library>

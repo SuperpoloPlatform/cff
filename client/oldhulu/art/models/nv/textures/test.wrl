@@ -1,0 +1,98 @@
+#VRML V2.0 utf8
+
+DEF	bone Bone {
+	skeleton "bone.csf"
+	animation ["die.caf"]
+	mesh ["yifu.cmf","jian.cmf"]
+	material ["yifu.crf","jian.crf"]
+	meshSet	[
+		"default",
+		"yifu.cmf","yifu.crf"
+		#"lian.cmf","lian.crf"
+		"jian.cmf","jian.crf"
+	]
+}
+
+DEF	tf_bone1 Transform {
+	translation	 0 0 0
+	children [
+		Rotation { rotation 0 1 0 1.57 }
+		DEF	jolidan	BoneInstance {
+			classname "bone"
+			meshSet	"default"
+			animCycle ["beizhan.caf","0.1","0.5"]
+			refreshTime	0.01
+			lod	 1
+		}	
+	]
+}
+
+DEF	tf_bone2 Transform {
+	translation	 50 0 0
+	children [
+		Rotation { rotation 0 1 0 1.57 }
+		DEF	jolidan	BoneInstance {
+			classname "bone"
+			meshSet	"default"
+			animCycle ["attack.caf","0.1","0.5"]
+			refreshTime	0.01
+			lod	 1
+		}	
+	]
+}
+
+DEF	tf_bone3 Transform {
+	translation	 100 0 0
+	children [
+		Rotation { rotation 0 1 0 1.57 }
+		DEF	jolidan	BoneInstance {
+			classname "bone"
+			meshSet	"default"
+			animCycle ["die.caf","0.1","0.5"]
+			refreshTime	0.01
+			lod	 1
+		}	
+	]
+}
+
+DEF	tf_bone4 Transform {
+	translation	 150 0 0
+	children [
+		Rotation { rotation 0 1 0 1.57 }
+		DEF	jolidan	BoneInstance {
+			classname "bone"
+			meshSet	"default"
+			animCycle ["run.caf","0.1","0.5"]
+			refreshTime	0.01
+			lod	 1
+		}	
+	]
+}
+
+DEF	tf_bone5 Transform {
+	translation	 200 0 0
+	children [
+		Rotation { rotation 0 1 0 1.57 }
+		DEF	jolidan	BoneInstance {
+			classname "bone"
+			meshSet	"default"
+			animCycle ["stand.caf","0.1","0.5"]
+			refreshTime	0.01
+			lod	 1
+		}	
+	]
+}
+
+DEF	tf_bone6 Transform {
+	translation	 250 0 0
+	children [
+		Rotation { rotation 0 1 0 1.57 }
+		DEF	jolidan	BoneInstance {
+			classname "bone"
+			meshSet	"default"
+			animCycle ["walk.caf","0.1","0.5"]
+			refreshTime	0.01
+			lod	 1
+		}	
+	]
+}										  

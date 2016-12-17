@@ -1,0 +1,482 @@
+<?xml ?>
+<world>
+  <variables>
+    <variable name="LodM" value="-0.00666667" />
+    <variable name="LodA" value="1.33333" />
+  </variables>
+  <plugins>
+    <plugin name="genmeshFactory">crystalspace.mesh.loader.factory.genmesh</plugin>
+    <plugin name="genmesh">crystalspace.mesh.loader.genmesh</plugin>
+    <plugin name="terrainFact">crystalspace.mesh.loader.factory.terrain2</plugin>
+    <plugin name="terrain">crystalspace.mesh.loader.terrain2</plugin>
+    <plugin name="foliageFact">crystalspace.mesh.loader.factory.foliage</plugin>
+    <plugin name="foliage">crystalspace.mesh.loader.foliage</plugin>
+	<plugin name="cal3d">crystalspace.mesh.loader.sprite.cal3d</plugin>
+	<plugin name="cal3dfact">crystalspace.mesh.loader.factory.sprite.cal3d</plugin>
+  </plugins>
+  <shaders>
+    <shader>
+      <file>/shader/terrain/basemap.xml</file>
+    </shader>
+        <shader>
+            <file>/shader/sky/basic_cubemap.xml</file>
+        </shader>
+    <shader>
+      <file>/shader/terrain/splatbase.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/terrain/splat.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/terrain/splat-detail.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/lighting/fullbright.xml</file>
+    </shader>
+    <!-- 解决透明片的问题 -->
+    <shader>
+      <file>/shader/ambient.xml</file>
+    </shader>
+    <!-- 其他 -->
+    <shader>
+      <file>/shader/light.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/light_bumpmap.xml</file>
+    </shader>
+  </shaders>
+  <textures>
+    <texture name="andrew_marble4.jpg">
+      <file>/art/textures/andrew_marble4.jpg</file>
+    </texture>
+    <texture name="marble-detail">
+      <file>/art/textures/terrain/marble-detail.png</file>
+    </texture>
+    <texture name="stone4.gif">
+      <file>/art/textures/stone4.gif</file>
+    </texture>
+    <texture name="stone4_n.png">
+      <file>/art/textures/stone4_n.png</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name="grass.png">
+      <file>/art/textures/terrain/grass.png</file>
+    </texture>
+	<texture name="dibiao1.png">
+      <file>/art/textures/terrain/dibiao1.png</file>
+    </texture>
+	<texture name="dibiao2.png">
+      <file>/art/textures/terrain/dibiao2.png</file>
+    </texture>
+	<texture name="dibiao3.png">
+      <file>/art/textures/terrain/dibiao3.png</file>
+    </texture>
+	<texture name="dibiao4.png">
+      <file>/art/textures/terrain/dibiao4.png</file>
+    </texture>
+	<texture name="dibiao5.png">
+      <file>/art/textures/terrain/dibiao5.png</file>
+    </texture>
+	<texture name="base_normalmap">
+      <file>/art/textures/terrain/normalmap.png</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name="materialmap_base.png">
+      <file>/art/textures/terrain/materialmap_base.png</file>
+      <clamp />
+      <class>nosharpen</class>
+    </texture>
+    <texture name="black">
+      <color red="0" green="0" blue="0" />
+    </texture>
+        <texture name="sky">
+            <type>crystalspace.texture.loader.cubemap</type>
+            <params>
+                <north>/art/textures/skyboxes/skybox_f.jpg</north>
+                <south>/art/textures/skyboxes/skybox_b.jpg</south>
+                <east>/art/textures/skyboxes/skybox_r.jpg</east>
+                <west>/art/textures/skyboxes/skybox_l.jpg</west>
+                <top>/art/textures/skyboxes/skybox_u.jpg</top>
+                <bottom>/art/textures/skyboxes/skybox_d.jpg</bottom>
+            </params>
+        </texture>
+  </textures>
+  <materials>
+    <material name="ScatterSky">
+      <texture>black</texture>
+    </material>
+    <material name="Base">
+      <texture>materialmap_base.png</texture>
+	  <shadervar name="tex normal" type="texture">base_normalmap</shadervar>
+      <shader type="base">terrain_basemap</shader>
+    </material>
+    <material name="splatbase">
+      <shader type="base">terrain_splatbase</shader>
+    </material>
+    <material name="Marble">
+      <texture>andrew_marble4.jpg</texture>
+      <shadervar name="texture scale" type="vector2">32,32</shadervar>
+      <shader type="terrain splat">terrain_splatting-detail</shader>
+      <shadervar name="tex detail" type="texture">marble-detail</shadervar>
+      <shadervar name="tex detail scale" type="vector2">5,5</shadervar>
+    </material>
+    <material name="Stone">
+      <texture>stone4.gif</texture>
+      <shader type="terrain splat">terrain_splatting</shader>
+      <shadervar name="tex normal" type="texture">stone4_n.png</shadervar>
+      <shadervar name="texture scale" type="vector2">256,256</shadervar>
+      <shadervar name="specular" type="vector3">0,0,0</shadervar>
+    </material>
+    <material name="Grass">
+      <texture>grass.png</texture>
+      <shadervar name="texture scale" type="vector2">256,256</shadervar>
+      <shader type="terrain splat">terrain_splatting</shader>
+    </material>
+	<material name="dibiao1">
+      <texture>dibiao1.png</texture>
+      <shadervar name="texture scale" type="vector2">512,512</shadervar>
+      <shader type="terrain splat">terrain_splatting</shader>
+    </material>
+	<material name="dibiao2">
+      <texture>dibiao2.png</texture>
+      <shadervar name="texture scale" type="vector2">512,512</shadervar>
+      <shader type="terrain splat">terrain_splatting</shader>
+    </material>
+	<material name="dibiao3">
+      <texture>dibiao3.png</texture>
+      <shadervar name="texture scale" type="vector2">512,512</shadervar>
+      <shader type="terrain splat">terrain_splatting</shader>
+    </material>
+	<material name="dibiao4">
+      <texture>dibiao4.png</texture>
+      <shadervar name="texture scale" type="vector2">512,512</shadervar>
+      <shader type="terrain splat">terrain_splatting</shader>
+    </material>
+	<material name="dibiao5">
+      <texture>dibiao5.png</texture>
+      <shadervar name="texture scale" type="vector2">512,512</shadervar>
+      <shader type="terrain splat">terrain_splatting</shader>
+    </material>
+        <material name="sky">
+            <shader type="base">sky_basic_cubemap</shader>
+            <shader type="diffuse">sky_basic_cubemap</shader>
+            <shadervar type="texture" name="tex sky">sky</shadervar>
+        </material>
+  </materials>
+  <start>
+    <sector>Scene</sector>
+    <position x="0" y="30" z="0" />
+    <forward x="0" y="0" z="1" />
+    <up x="0" y="1" z="0" />
+  </start>
+  <!-- 地形 -->
+  <meshfact name="TerrainFact">
+    <plugin>terrainFact</plugin>
+    <params>
+      <renderer>crystalspace.mesh.object.terrain2.bruteblockrenderer</renderer>
+      <collider>crystalspace.mesh.object.terrain2.collider</collider>
+      <feeder>crystalspace.mesh.object.terrain2.simpledatafeeder</feeder>
+      <maxloadedcells>-1</maxloadedcells>
+      <cells>
+        <celldefault>
+          <gridsize width="1025" height="1025" />
+          <materialmapsize width="512" height="512" />
+          <size x="2560" y="150" z="2560" />
+          <splatbasematerial>splatbase</splatbasematerial>
+          <renderproperties>
+            <param name="splat render priority">object2</param>
+          </renderproperties>
+        </celldefault>
+        <cell>
+          <name>0</name>
+          <position x="-1270" y="-1270" />
+          <basematerial>Base</basematerial>
+          <feederproperties>
+            <param name="heightmap source">/art/textures/terrain/heightmap.png</param>
+            <param name="materialmap source">/art/textures/terrain/materialmap.png</param>
+          </feederproperties>
+        </cell>
+      </cells>
+    </params>
+  </meshfact>
+    <meshfact name="sky">
+        <plugin>genmeshFactory</plugin>
+        <nolighting />
+        <params>
+            <sphere rimvertices="6" reversed="true">
+                <radius x="10000" y="10000" z="10000" />
+            </sphere>
+        </params>
+    </meshfact>
+  <!-- <library>/art/models/player/girl/girl.xml</library> -->
+  <library>/art/models/world_man.xml</library>
+  <library>/art/models/monster/yang/yang.xml</library>
+  <library>/art/models/genCube/genCube.003</library>
+  <library>/art/models/lightmaps.cslib</library>
+  <library>/art/models/objects/grass.xml</library>
+  <library>/art/models/objects/clouds/clouds.xml</library>
+  <library>/art/models/objects/gensky.xml</library>
+  <library>/art/models/objects/cube/cube.xml</library>
+  <library>/art/models/box/shaderlib.xml</library>
+  <library>/art/models/box/factorylib.xml</library>
+  <library>/art/models/box/materials.xml</library>
+  <sector name="Scene">
+    <ambient blue="0.1" green="0.1" red="0.1" />
+    <cullerp plugin="crystalspace.culling.frustvis" />
+    <light name="sun">
+      <center x="50000" y="86030" z="0" />
+      <color red="0.6" green="0.6" blue="0.6" />
+      <radius>1000000</radius>
+    </light>
+    <light name="sun2">
+      <center x="-50000" y="86030" z="0" />
+      <color red="0.6" green="0.6" blue="0.6" />
+      <radius>1000000</radius>
+    </light>
+	<!-- 碰撞盒 -->
+	<meshobj name="col#1">
+      <plugin>crystalspace.mesh.loader.genmesh</plugin>
+      <params>
+        <factory>col</factory>
+      </params>
+      <move>
+        <v x="0" y="0" z="0" />
+        <matrix>
+          <scale x="1" y="1" z="1" />
+          <rotx>1.75</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj>
+	
+	<meshobj name='bullet'>
+		<priority>portal</priority>
+		<plugin>cal3d</plugin>
+		<params>
+			<factory>genCube.003</factory>
+		</params>
+		<zuse/>
+		<move>
+			<v x='7.4811' y='10.3437' z='-6.5076' />
+		</move>
+		<invisible/>
+	</meshobj>
+	
+	<meshobj name='Cube'>
+		<plugin>genmesh</plugin>
+		<params>
+			<factory>genCube</factory>
+			<material>red</material>
+		</params>
+		<zuse/>
+		<move>
+			<v y='0' x='0' z='0'/>
+		</move>
+	</meshobj>
+	
+	<meshobj name='grenade'>
+		<priority>portal</priority>
+		<plugin>cal3d</plugin>
+		<params>
+			<factory>genCube.003</factory>
+		</params>
+		<zuse/>
+		<move>
+			<v x='7.4811' y='10.3437' z='-6.5076' />
+		</move>
+		<invisible/>
+	</meshobj>
+	
+	<meshobj name='gun'>
+		<priority>portal</priority>
+		<plugin>cal3d</plugin>
+		<params>
+			<factory>genCube.003</factory>
+		</params>
+		<zuse/>
+		<move>
+			<v x='7.4811' y='10.3437' z='-6.5076' />
+		</move>
+		<invisible/>
+	</meshobj>
+	
+    <!-- 地形 -->
+    <meshobj name="Terrain">
+      <plugin>terrain</plugin>
+      <params>
+        <factory>TerrainFact</factory>
+        <materialpalette>
+		  <!-- 按照wangchuren的要求，因为细节材质效果不好，暂时不显示。
+		  <material>dibiao1</material>
+          <material>dibiao2</material>
+          <material>dibiao3</material>
+          <material>dibiao4</material>
+          <material>dibiao5</material>-->
+        </materialpalette>
+        <cells>
+          <cell>
+            <name>0</name>
+            <renderproperties>
+              <shadervar name="tex lightmap" type="texture">lightmaps_terrainf_0_png</shadervar>
+              <!--<shadervar name="tex lightmap dir 1" type="texture">lightmaps_terrainf_0_d1_png</shadervar>
+              <shadervar name="tex lightmap dir 2" type="texture">lightmaps_terrainf_0_d2_png</shadervar>
+              <shadervar name="tex lightmap dir 3" type="texture">lightmaps_terrainf_0_d3_png</shadervar>-->
+              <!-- basemap scale is: (w-1)/w,(h-1)/h,0.5/w,0.5/h -->
+              <shadervar name="basemap scale" type="vector4">0.999023438,0.999023438,0.00048828125,0.00048828125</shadervar>
+            </renderproperties>
+          </cell>
+        </cells>
+      </params>
+      <move>
+        <v x="0" y="0" z="0" />
+      </move>
+      <priority>wall</priority>
+      <staticlit />
+    </meshobj>
+    <key name="cmd_AnimateSky" value="clouds,y,.005" />
+    <!-- 高空的云彩 -->
+    <!--暂时不要云彩
+	<meshobj name="clouds">
+      <plugin>genmesh</plugin>
+      <priority>transp</priority>
+      <params>
+        <factory>genclouds</factory>
+        <color red="0" green="0" blue="0" />
+        <material>cloudsperlin0.png</material>
+        <mixmode>
+          <copy />
+        </mixmode>
+        <submesh name="0">
+          <material>cloudsperlin0.png</material>
+        </submesh>
+        <submesh name="0_0">
+          <material>cloudsperlin0.png</material>
+        </submesh>
+        <submesh name="0_1">
+          <material>cloudsperlin0.png</material>
+        </submesh>
+        <submesh name="0_2">
+          <material>cloudsperlin0.png</material>
+        </submesh>
+        <submesh name="0_3">
+          <material>cloudsperlin0.png</material>
+        </submesh>
+        <renderbuffer name="texture coordinate lightmap" file="/art/models/objects/bindata/clouds_lm" />
+      </params>
+      <trimesh>
+        <id>shadows</id>
+      </trimesh>
+      <camera />
+      <ztest />
+      <noshadows />
+      <move>
+        <v y="-15.7" x="-47.9" z="-122.302" />
+      </move>
+      <staticlit />
+    </meshobj>-->
+    <!-- 蓝天 -->
+    <!--<meshobj name="sky">
+      <plugin>genmesh</plugin>
+      <priority>sky</priority>
+      <params>
+        <factory>gensky</factory>
+        <color red="0" green="0" blue="0" />
+        <manualcolors />
+        <material>skyno</material>
+        <mixmode>
+          <copy />
+        </mixmode>
+        <submesh name="0">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_0">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_1">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_10">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_11">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_2">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_3">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_4">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_5">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_6">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_7">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_8">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_9">
+          <material>skyno</material>
+        </submesh>
+        <renderbuffer name="texture coordinate lightmap" file="/art/models/objects/bindata/sky_lm" />
+      </params>
+      <trimesh>
+        <id>shadows</id>
+      </trimesh>
+      <camera />
+      <zfill />
+      <noshadows />
+      <move>
+        <v y="-15.7" x="-47.9" z="-122.302" />
+      </move>
+      <staticlit />
+    </meshobj>-->
+        <meshobj name="sky">
+            <noshadows/>
+            <plugin>crystalspace.mesh.loader.genmesh</plugin>
+            <params>
+                <factory>sky</factory>
+                <color red="1" green="1" blue="1" />
+                <manualcolors />
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <material>sky</material>
+                <lighting>no</lighting>
+            </params>
+            <camera />
+            <zfill />
+            <priority>sky</priority>
+        </meshobj>
+    <!-- Uncomment for ...fog: -->
+    <!--fog red=".3" green=".27" blue=".27" density="0.002" /-->
+    <fog red=".79" green=".70" blue=".43" density="0.0001" />
+	<!--<fog red=".39" green=".35" blue=".22" density="0.0004" />-->
+    <!-- 这是小女孩 
+    <meshobj name="girl">
+      <priority>portal</priority>
+      <plugin>cal3d</plugin>
+      <params>
+        <factory>genGirl</factory>
+      </params>
+      <zuse />
+      <move>
+        <v x="-704" y="500" z="-370" />
+        <matrix><!--matrix为重点，绕轴转动
+          <roty>1.68</roty>
+          <rotz>0</rotz>
+          <rotx>0</rotx>
+        </matrix>
+      </move>
+    </meshobj>
+	-->
+  </sector>
+</world>

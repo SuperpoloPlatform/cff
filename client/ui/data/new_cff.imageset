@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="new_cff" Imagefile="new_cff.png">
+<Image Name="bg" XPos="0" YPos="790" Width="1024" Height="233"/>
+<Image Name="btn_normal" XPos="0" YPos="341" Width="279" Height="45"/>
+<Image Name="btn_hover" XPos="0" YPos="294" Width="279" Height="45"/>
+<Image Name="waikuang" XPos="0" YPos="137" Width="317" Height="154"/>
+<Image Name="top_image" XPos="0" YPos="729" Width="951" Height="58"/>
+<Image Name="bg_img1" XPos="0" YPos="26" Width="747" Height="23"/>
+<Image Name="bg_img2" XPos="0" YPos="0" Width="747" Height="23"/>
+<Image Name="firm1" XPos="319" YPos="137" Width="123" Height="124"/>
+<Image Name="firm2" XPos="445" YPos="137" Width="118" Height="119"/>
+<Image Name="bg_kuang" XPos="0" YPos="51" Width="747" Height="23"/>
+<Image Name="tu" XPos="0" YPos="397" Width="1000" Height="329"/>
+<Image Name="jifenshijian" XPos="283" YPos="319" Width="555" Height="76"/>
+<Image Name="hongbg" XPos="752" YPos="0" Width="159" Height="21"/>
+<Image Name="baidi" XPos="751" YPos="26" Width="182" Height="23"/>
+<Image Name="baidim1" XPos="759" YPos="26" Width="174" Height="23"/>
+<Image Name="baidim2" XPos="767" YPos="26" Width="166" Height="23"/>
+<Image Name="baidim3" XPos="775" YPos="26" Width="158" Height="23"/>
+<Image Name="baidim4" XPos="783" YPos="26" Width="150" Height="23"/>
+<Image Name="baidim5" XPos="791" YPos="26" Width="142" Height="23"/>
+<Image Name="baidim6" XPos="799" YPos="26" Width="134" Height="23"/>
+<Image Name="baidim7" XPos="807" YPos="26" Width="126" Height="23"/>
+<Image Name="baidim8" XPos="815" YPos="26" Width="118" Height="23"/>
+<Image Name="baidim9" XPos="823" YPos="26" Width="110" Height="23"/>
+<Image Name="huangdi" XPos="917" YPos="0" Width="102" Height="23"/>
+<Image Name="huangdim1" XPos="925" YPos="0" Width="94" Height="23"/>
+<Image Name="huangdim2" XPos="933" YPos="0" Width="86" Height="23"/>
+<Image Name="huangdim3" XPos="941" YPos="0" Width="78" Height="23"/>
+<Image Name="huangdim4" XPos="949" YPos="0" Width="70" Height="23"/>
+<Image Name="huangdim5" XPos="957" YPos="0" Width="62" Height="23"/>
+<Image Name="huangdim6" XPos="965" YPos="0" Width="54" Height="23"/>
+<Image Name="hongdi" XPos="954" YPos="26" Width="46" Height="23"/>
+<Image Name="hongdim1" XPos="962" YPos="26" Width="38" Height="23"/>
+<Image Name="hongdim2" XPos="970" YPos="26" Width="30" Height="23"/>
+<Image Name="xiaoditu_bg" XPos="750" YPos="52" Width="185" Height="183"/>
+<Image Name="zhunxin_putong" XPos="943" YPos="55" Width="76" Height="76"/>
+<Image Name="zhunxin_jixie" XPos="56" YPos="84" Width="44" Height="44"/>
+<Image Name="qiang_bai" XPos="106" YPos="84" Width="128" Height="39"/>
+<Image Name="qiang_huang" XPos="238" YPos="84" Width="128" Height="39"/>
+<Image Name="qiang_hong" XPos="369" YPos="84" Width="128" Height="39"/>
+</Imageset>

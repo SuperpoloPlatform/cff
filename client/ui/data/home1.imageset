@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="home1" Imagefile="home1.png">
+<Image Name="dianbg" XPos="0" YPos="0" Width="254" Height="371" />
+<Image Name="dating_bg" XPos="0" YPos="374" Width="183" Height="372" />
+<Image Name="datingEdit_image" XPos="258" YPos="0" Width="281" Height="54" />
+<Image Name="touxiang" XPos="258" YPos="60" Width="100" Height="100" />
+<Image Name="sanjiao" XPos="543" YPos="0" Width="10" Height="10" />
+<Image Name="tu" XPos="256" YPos="161" Width="667" Height="221" />
+<Image Name="jindukuai" XPos="558" YPos="0" Width="194" Height="10" />
+<Image Name="jindukuang" XPos="0" YPos="748" Width="995" Height="12" />
+</Imageset>

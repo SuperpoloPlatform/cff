@@ -1,0 +1,50 @@
+<library>
+  <shaders>
+    <!-- 为云和天空引入的shader -->
+    <shader>
+      <file>/shader/particles/soft-alpha.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/sky/clouds2.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/sky/sky.xml</file>
+    </shader>
+  </shaders>
+	<textures>
+		<!-- 天空 -->
+        <texture name="perlin0.png">
+            <file>/art/textures/perlin0.png</file>
+        </texture>
+        <texture name="perlin1.png">
+            <file>/art/textures/perlin1.png</file>
+        </texture>
+        <texture name="perlin2.png">
+            <file>/art/textures/perlin2.png</file>
+        </texture>
+        <texture name="perlin3.png">
+            <file>/art/textures/perlin3.png</file>
+        </texture>
+	</textures>
+	<materials>
+        <material name="cloudsperlin0.png">
+            <texture>perlin0.png</texture>
+            <shader type="depthwrite">*null</shader>
+            <shader type="ambient">clouds2</shader>
+            <shader type="diffuse">*null</shader>
+            <shadervar type="texture" name="noise1">perlin1.png</shadervar>
+            <shadervar type="texture" name="noise2">perlin2.png</shadervar>
+            <shadervar type="texture" name="noise3">perlin3.png</shadervar>
+            <shadervar type="vector2" name="windvec">0.0,0.5</shadervar>
+            <shadervar type="float" name="timeOfDay">1</shadervar>
+			<shadervar type="vector3" name="cloudcol">1,1,1</shadervar>
+            <shadervar type="vector3" name="skycol">1,1,1</shadervar>
+        </material>
+		<material name="skyno">
+            <texture>no</texture>
+            <shader type="diffuse">*null</shader>
+            <shader type="ambient">sky</shader>
+        </material>
+	</materials>
+    <library>/art/models/genclouds.xml</library>
+</library>

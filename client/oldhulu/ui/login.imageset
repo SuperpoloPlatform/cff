@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    interface imageset
+-->
+<Imageset Name="login" Imagefile="login.png"  NativeHorzRes="3000" NativeVertRes="1875" AutoScaled="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Imageset.xsd">
+	<Image Name="background" XPos="0" YPos="0" Width="3000" Height="1875"/>
+</Imageset>

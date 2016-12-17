@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name="particles">crystalspace.mesh.loader.particles</plugin>
+		<plugin name="particlesfact">crystalspace.mesh.loader.factory.particles</plugin>
+	</plugins>
+	<textures>
+		<texture name="spark.png">
+            <file>art/models/player/textures/spark.png</file>
+        </texture>
+    </textures>
+	
+	<materials>
+		<material name="spark">
+			<texture>spark.png</texture>
+		</material>
+	</materials>
+
+     <meshfact name="particlesFactory">
+        <plugin>particlesfact</plugin>
+        <params />
+    </meshfact>
+	
+	<meshobj name="attack.normal">
+		<plugin>particles</plugin>
+		<params>
+			<factory>particlesFactory</factory>
+
+			<material>spark</material>
+			<particlesize x="0.05" y="0.05" />
+			<transformmode>localemitter</transformmode>
+			
+			<mixmode>
+				<add />
+			</mixmode>
+
+			<emitter type="cone">
+				<enabled />
+				<initialttl min="0.6" max="0.6" />
+				<emissionrate>66</emissionrate>
+				<position x="0" y="0" z="0" />
+				<placement>center</placement>
+				<extent x="0" y="-1" z="0" />
+				<coneangle>0.5</coneangle>
+				<initialvelocity x="0" y="1" z="0" />
+			</emitter>
+			<effector type="force">
+				<acceleration x="0" y="-0.1" z="0" />
+			</effector>
+		</params>
+		
+			<move>
+				<v x="-0.13" y="0.45" z="0" />
+				<matrix>
+					<roty>0</roty>
+					<rotz>0</rotz>
+					<rotx>1.57</rotx>
+				</matrix>
+			</move>
+		<ztest />
+		<noshadows/>
+	</meshobj>
+</library>

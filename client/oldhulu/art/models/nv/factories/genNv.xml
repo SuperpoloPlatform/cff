@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<!-- nv的模型工厂 -->
+	<meshfact name="nv">
+		<plugin>cal3dfact</plugin>
+		<params>
+			<options rotate_x_axis="yes" flip_textures="no" />
+			<animation file="textures/stand.caf" name="stand" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="textures/run.caf" name="run" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="textures/walk.caf" name="walk" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="textures/attack.caf" name="attack" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="textures/beizhan.caf" name="beizhan" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="textures/die.caf" name="die" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<scale value="0.005" />
+			<skeleton file="textures/bone.csf" />
+			<mesh file="textures/yifu.cmf" name="yifu" material="nv_katongnv.jpg" />
+			<mesh file="textures/jian.cmf" name="jian" material="nv_jian.jpg" />
+			
+			<socket name="socketR" tri="90" mesh="0" submesh="0" />
+			
+			<hardtransform
+				rot_axis_x="1"
+				rot_axis_y="0"
+				rot_axis_z="0"
+				rot_angle="90" />
+			<hardtransform
+				rot_axis_x="0"
+				rot_axis_y="1"
+				rot_axis_z="0"
+				rot_angle="180" />
+		</params>
+	</meshfact>
+</library>

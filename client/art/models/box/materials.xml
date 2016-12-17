@@ -1,0 +1,16 @@
+<library>
+  <textures>
+    <texture name="col.png">
+      <file>/art/textures/col.png</file>
+      <alpha>
+        <binary />
+      </alpha>
+    </texture>
+  </textures>
+  <materials>
+    <material name="m0">
+      <texture>col.png</texture>
+      <shader type="ambient">ambient</shader>
+    </material>
+  </materials>
+</library>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name='null'>crystalspace.mesh.loader.null</plugin>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	<textures>
+		<texture name='no.png'>
+			<file>textures/no.png</file>
+		</texture>
+	</textures>
+	<materials>
+		<material name="no">
+			<texture>no.png</texture>
+		</material>
+	</materials>
+	<library>factories/genCube.xml</library>
+</library>

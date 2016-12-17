@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="waitroom" Imagefile="waitroom.png">
+<Image Name="left_btn_normal" XPos="178" YPos="0" Width="447" Height="29"/>
+<Image Name="left_btn_hover" XPos="180" YPos="127" Width="447" Height="29"/>
+<Image Name="right_btn_normal" XPos="179" YPos="30" Width="447" Height="29"/>
+<Image Name="center_img" XPos="180" YPos="159" Width="318" Height="102"/>
+<Image Name="center_bg" XPos="631" YPos="0" Width="240" Height="329"/>
+<Image Name="jiazai_btn" XPos="178" YPos="264" Width="306" Height="46"/>
+<Image Name="man" XPos="0" YPos="0" Width="171" Height="473"/>
+<Image Name="huihetishi" XPos="175" YPos="357" Width="401" Height="118"/>
+<Image Name="tishi" XPos="389" YPos="479" Width="412" Height="192"/>
+<Image Name="tishi_close" XPos="585" YPos="71" Width="20" Height="20"/>
+</Imageset>

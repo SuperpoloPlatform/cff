@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+	<sounds>
+		<!-- 这里添加音效
+		<sound name="spider1" file="spider1.wav" />
+		-->
+	</sounds>
+	<!-- import玩家的lib -->
+	<library path="/art/models/nv" file="library.xml" />
+</library>

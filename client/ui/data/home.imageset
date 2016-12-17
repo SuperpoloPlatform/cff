@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="home" Imagefile="home.png">
+<Image Name="touxiangkuang" XPos="168" YPos="0" Width="257" Height="140" />
+<Image Name="menu_btn_hover" XPos="0" YPos="0" Width="81" Height="176" />
+<Image Name="menu_btn_normal" XPos="84" YPos="0" Width="81" Height="176" />
+<Image Name="menu_btn1_hover" XPos="0" YPos="179" Width="81" Height="70" />
+<Image Name="menu_btn1_normal" XPos="83" YPos="179" Width="81" Height="70" />
+<Image Name="pindaolb" XPos="0" YPos="254" Width="134" Height="44" />
+<Image Name="shezhi" XPos="0" YPos="301" Width="134" Height="45" />
+<Image Name="tuichucff" XPos="0" YPos="350" Width="134" Height="44" />
+<Image Name="choose_pindao_btn" XPos="428" YPos="0" Width="469" Height="45" />
+<Image Name="joinPindao" XPos="0" YPos="397" Width="134" Height="44" />
+<Image Name="pindaobg_pushed" XPos="168" YPos="143" Width="372" Height="35" />
+<Image Name="pindaobg_normal" XPos="168" YPos="181" Width="372" Height="35" />
+<Image Name="kongjianbg_liang" XPos="0" YPos="446" Width="754" Height="34" />
+<Image Name="kongjianbg_qian" XPos="0" YPos="485" Width="754" Height="34" />
+<Image Name="kongjianbg_qian_secected" XPos="0" YPos="867" Width="503" Height="23" />
+<Image Name="jinxing" XPos="899" YPos="0" Width="16" Height="34" />
+<Image Name="dengdai" XPos="937" YPos="0" Width="16" Height="34" />
+<Image Name="manyuan" XPos="918" YPos="0" Width="16" Height="34" />
+<Image Name="jingyuanbg" XPos="140" YPos="254" Width="423" Height="139" />
+<Image Name="touxiangbg" XPos="917" YPos="40" Width="107" Height="98" />
+<Image Name="ProgressBarLitSegment" XPos="1000" YPos="0" Width="10" Height="24" />
+<Image Name="ProgressBarLeft" XPos="958" YPos="0" Width="5" Height="26" />
+<Image Name="ProgressBarMiddle" XPos="970" YPos="0" Width="10" Height="26" />
+<Image Name="ProgressBarRight" XPos="990" YPos="0" Width="5" Height="26" />
+<Image Name="zhanjibg" XPos="0" YPos="525" Width="423" Height="339" />
+<Image Name="mode_btn_normal" XPos="428" YPos="523" Width="116" Height="44" />
+<Image Name="mode_btn_hover" XPos="426" YPos="574" Width="116" Height="44" />
+<Image Name="beibao_btn1" XPos="429" YPos="48" Width="164" Height="71" />
+<Image Name="beibao_btn2" XPos="596" YPos="48" Width="103" Height="72" />
+<Image Name="right_bg" XPos="639" YPos="543" Width="385" Height="480" />
+<Image Name="jiechu_bg" XPos="700" YPos="48" Width="217" Height="129" />
+<Image Name="jiechu_btn_normal" XPos="168" YPos="219" Width="59" Height="30" />
+<Image Name="jiechu_btn_hover" XPos="231" YPos="219" Width="59" Height="30" />
+<Image Name="shengyudianshu" XPos="138" YPos="396" Width="226" Height="48" />
+<Image Name="fangyudian" XPos="580" YPos="239" Width="414" Height="54" />
+<Image Name="gongjidian" XPos="545" YPos="181" Width="458" Height="55" />
+<Image Name="teshudian" XPos="581" YPos="297" Width="416" Height="50" />
+</Imageset>

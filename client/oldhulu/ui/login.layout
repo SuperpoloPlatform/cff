@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="interface/StaticImage" Name="loginRoot">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedMinSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+		<Property Name="UnifiedSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="BackgroundEnabled" Value="True"/>
+		<Property Name="FrameEnabled" Value="False"/>
+		<Window Type="interface/StaticImage" Name="login/Username">
+		  <Property Name="UnifiedMaxSize" Value="{{0.099,0},{0.039,0}}"/>
+		  <Property Name="UnifiedMinSize" Value="{{0.099,0},{0.039,0}}"/>
+		  <Property Name="UnifiedPosition" Value="{{0.459,0},{0.408,0}}"/>
+		  <Property Name="UnifiedSize" Value="{{0.099,0},{0.039,0}}"/>
+		  <Property Name="Image" Value="set:interface image:text_username"/>
+		  <Property Name="BackgroundEnabled" Value="True"/>
+		  <Property Name="FrameEnabled" Value="False"/>
+		</Window>
+		<Window Type="interface/Editbox" Name="login/UsernameEdit">
+			<Property Name="image" Value="set:interface image:input"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.109,0},{0.039,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.109,0},{0.039,0}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.459,0},{0.456,0}}"/>
+			<Property Name="UnifiedSize" Value="{{0.109,0},{0.039,0}}"/>
+		</Window>
+		<Window Type="interface/StaticImage" Name="login/Password">
+		  <Property Name="UnifiedMaxSize" Value="{{0.099,0},{0.039,0}}"/>
+		  <Property Name="UnifiedMinSize" Value="{{0.099,0},{0.039,0}}"/>
+		  <Property Name="UnifiedPosition" Value="{{0.459,0},{0.504,0}}"/>
+		  <Property Name="UnifiedSize" Value="{{0.099,0},{0.039,0}}"/>
+		  <Property Name="Image" Value="set:interface image:text_password"/>
+		  <Property Name="BackgroundEnabled" Value="True"/>
+		  <Property Name="FrameEnabled" Value="False"/>
+		</Window>
+		<Window Type="interface/Editbox" Name="login/PasswordEdit">
+			<Property Name="image" Value="set:interface image:input"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.109,0},{0.039,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.109,0},{0.039,0}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.459,0},{0.552,0}}"/>
+			<Property Name="UnifiedSize" Value="{{0.109,0},{0.039,0}}"/>
+		</Window>
+		<Window Type="interface/Button" Name="login/Landing">
+			<Property Name="HoverImage" Value="set:interface image:btn_hover"/>
+			<Property Name="NormalImage" Value="set:interface image:btn_normal"/>
+			<Property Name="PushedImage" Value="set:interface image:btn_down"/>
+			<Property Name="ButtonImage" Value="set:interface image:btn_login_text"/>
+			<Property Name="ButtonWidth" Value="142"/>
+			<Property Name="ButtonHeight" Value="35"/>
+			<Property Name="ButtonImageWidth" Value="55"/>
+			<Property Name="ButtonImageHeight" Value="34"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.099,0},{0.039,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.099,0},{0.039,0}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.4,0},{0.6,0}}"/>
+			<Property Name="UnifiedSize" Value="{{0.099,0},{0.039,0}}"/>
+		</Window>
+		<Window Type="interface/Button" Name="login/Registered">
+			<Property Name="HoverImage" Value="set:interface image:btn_hover"/>
+			<Property Name="NormalImage" Value="set:interface image:btn_normal"/>
+			<Property Name="PushedImage" Value="set:interface image:btn_down"/>
+			<Property Name="ButtonImage" Value="set:interface image:btn_reg_text"/>
+			<Property Name="ButtonWidth" Value="142"/>
+			<Property Name="ButtonHeight" Value="35"/>
+			<Property Name="ButtonImageWidth" Value="55"/>
+			<Property Name="ButtonImageHeight" Value="34"/>
+			<Property Name="UnifiedMaxSize" Value="{{0.099,0},{0.039,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.099,0},{0.039,0}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.5,0},{0.6,0}}"/>
+			<Property Name="UnifiedSize" Value="{{0.099,0},{0.039,0}}"/>
+		</Window>
+	</Window>
+</GUILayout>

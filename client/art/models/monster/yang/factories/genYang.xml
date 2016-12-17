@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<!-- yang的模型工厂 -->
+	<meshfact name="genYang">
+		<plugin>cal3dfact</plugin>
+		<params>
+			<options rotate_x_axis="yes" flip_textures="no" />
+			<animation file="/art/models/monster/yang/textures/attack.caf" name="attack" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/monster/yang/textures/dead.caf" name="dead" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/monster/yang/textures/run.caf" name="run" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/monster/yang/textures/stand.caf" name="stand" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<scale value="0.05" />
+			<skeleton file="/art/models/monster/yang/textures/bone.csf" />
+			<mesh file="/art/models/monster/yang/textures/yang.cmf" name="yang" material="yang_sheep_1.tga" />
+			
+			<socket name="socketR" tri="90" mesh="0" submesh="0" />
+			
+			<hardtransform
+				rot_axis_x="1"
+				rot_axis_y="0"
+				rot_axis_z="0"
+				rot_angle="90" />
+			<hardtransform
+				rot_axis_x="0"
+				rot_axis_y="1"
+				rot_axis_z="0"
+				rot_angle="180" />
+		</params>
+	</meshfact>
+	<!--<meshobj name="yang">
+		<priority>object</priority>
+		<plugin>cal3d</plugin>
+		<params>
+		<factory>yang</factory>
+		</params>
+		<zuse />
+		<move>
+		 <v y="5" x="4" z="0" />
+		</move>
+	</meshobj>-->
+</library>

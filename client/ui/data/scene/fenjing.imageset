@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Imageset  xmlns:mx="http://www.adobe.com/2006/mxml"  Name="fengjing" Imagefile="/ui/data/fengjing.jpg">
+	<Image Name="fenjing_01" XPos="5" YPos="5" Width="307" Height="204"/>
+	<Image Name="fenjing_04" XPos="329" YPos="5" Width="204" Height="136"/>
+	<Image Name="fenjing_03" XPos="5" YPos="367" Width="204" Height="136"/>
+	<Image Name="fenjing_06" XPos="835" YPos="5" Width="138" Height="112"/>
+	<Image Name="fenjing_02" XPos="5" YPos="219" Width="204" Height="136"/>
+	<Image Name="fenjing_05" XPos="542" YPos="5" Width="281" Height="155"/>
+	<Image Name="fenjing_07" XPos="353" YPos="160" Width="135" Height="147"/>
+	<Image Name="xiaoge_bg" XPos="542" YPos="170" Width="461" Height="806"/>
+	<Image Name="xiaohui_bg" XPos="5" YPos="519" Width="376" Height="376"/>
+</Imageset>

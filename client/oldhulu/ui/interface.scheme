@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GUIScheme Name="interface" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="GUIScheme.xsd">
+	<Imageset Name="interface" Filename="interface.imageset"/>
+	<Imageset Filename="ice.imageset" Name="ice"/>
+	<Imageset Filename="ico.imageset" Name="ico"/>
+	<LookNFeel Filename="interface.looknfeel"/>
+	<WindowRendererSet Filename="CEGUIFalagardWRBase"/>
+	<FalagardMapping WindowType="interface/FrameWindow" TargetType="CEGUI/FrameWindow" Renderer="Falagard/FrameWindow" LookNFeel="interface/FrameWindow"/>
+	<FalagardMapping WindowType="interface/DefaultWindow" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="interface/DefaultWindow"/>
+	<FalagardMapping WindowType="interface/titlebar" TargetType="CEGUI/Titlebar" Renderer="Falagard/Titlebar" LookNFeel="interface/titlebar"/>
+	<FalagardMapping WindowType="interface/Button" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="interface/Button"/>
+	<FalagardMapping WindowType="interface/SystemButton" TargetType="CEGUI/PushButton" Renderer="Falagard/SystemButton" LookNFeel="interface/Button"/>
+	<FalagardMapping WindowType="interface/StaticImage" TargetType="DefaultWindow" Renderer="Falagard/StaticImage" LookNFeel="interface/StaticImage"/>
+	<FalagardMapping WindowType="interface/StaticText" TargetType="DefaultWindow" Renderer="Falagard/StaticText" LookNFeel="interface/StaticText"/>
+	<FalagardMapping WindowType="interface/DragContainer" TargetType="DragContainer" Renderer="Falagard/Default" LookNFeel="interface/DefaultWindow"/>
+	<FalagardMapping WindowType="interface/Checkbox" TargetType="CEGUI/Checkbox" Renderer="Falagard/ToggleButton" LookNFeel="interface/ToggleButton"/>
+	<FalagardMapping WindowType="interface/ComboDropList" TargetType="CEGUI/ComboDropList" Renderer="Falagard/Listbox" LookNFeel="interface/ComboDropList"/>
+	<FalagardMapping WindowType="interface/Thumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="interface/Thumb"/>
+	<FalagardMapping WindowType="interface/VerticalScrollbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="interface/VerticalScrollbar"/>
+	<FalagardMapping WindowType="interface/HorizontalScrollbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="interface/HorizontalScrollbar"/>
+	<FalagardMapping WindowType="interface/ProgressBar" TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="interface/ProgressBar"/>
+	<FalagardMapping WindowType="interface/Tooltip" TargetType="CEGUI/Tooltip" Renderer="Falagard/Tooltip" LookNFeel="interface/Tooltip"/>
+	<FalagardMapping WindowType="interface/Combobox" TargetType="CEGUI/Combobox" Renderer="Falagard/Default" LookNFeel="interface/Combobox"/>
+	<FalagardMapping WindowType="interface/Editbox" TargetType="CEGUI/Editbox" Renderer="Falagard/Editbox" LookNFeel="interface/Editbox"/>
+	<FalagardMapping WindowType="interface/MultiLineEditbox" TargetType="CEGUI/MultiLineEditbox" Renderer="Falagard/MultiLineEditbox" LookNFeel="interface/MultiLineEditbox"/>
+</GUIScheme>
